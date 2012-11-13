@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iOSSunrise.h"
 
 @interface ViewController : UIViewController
 

@@ -16,7 +16,27 @@
 		CEB817541652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB817521652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard */; };
 		CEB817571652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB817551652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard */; };
 		CEB8175A1652FF3F00DBAB71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB817591652FF3F00DBAB71 /* ViewController.m */; };
+		CEB81797165307B700DBAB71 /* us_only.sq3 in Resources */ = {isa = PBXBuildFile; fileRef = CEB81795165307B700DBAB71 /* us_only.sq3 */; };
+		CEB81798165307B700DBAB71 /* us_only.sq3.zip in Resources */ = {isa = PBXBuildFile; fileRef = CEB81796165307B700DBAB71 /* us_only.sq3.zip */; };
+		CEB8179E165308D000DBAB71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
+		CEB817A3165308D000DBAB71 /* Sunrise.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEB817A2165308D000DBAB71 /* Sunrise.h */; };
+		CEB817A5165308D000DBAB71 /* Sunrise.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB817A4165308D000DBAB71 /* Sunrise.m */; };
+		CEB817A9165308E600DBAB71 /* libSunrise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB8179D165308D000DBAB71 /* libSunrise.a */; };
+		CEB817AC1653090C00DBAB71 /* iOSSunrise.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB817AB1653090C00DBAB71 /* iOSSunrise.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEB8179B165308D000DBAB71 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				CEB817A3165308D000DBAB71 /* Sunrise.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CEB8173C1652FF3F00DBAB71 /* Soto.Katie_asgt6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soto.Katie_asgt6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +53,15 @@
 		CEB817561652FF3F00DBAB71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		CEB817581652FF3F00DBAB71 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CEB817591652FF3F00DBAB71 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEB8177C1653042E00DBAB71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEB81795165307B700DBAB71 /* us_only.sq3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = us_only.sq3; path = Resources/us_only.sq3; sourceTree = "<group>"; };
+		CEB81796165307B700DBAB71 /* us_only.sq3.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = us_only.sq3.zip; path = Resources/us_only.sq3.zip; sourceTree = "<group>"; };
+		CEB8179D165308D000DBAB71 /* libSunrise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSunrise.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB817A1165308D000DBAB71 /* Sunrise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sunrise-Prefix.pch"; sourceTree = "<group>"; };
+		CEB817A2165308D000DBAB71 /* Sunrise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sunrise.h; sourceTree = "<group>"; };
+		CEB817A4165308D000DBAB71 /* Sunrise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sunrise.m; sourceTree = "<group>"; };
+		CEB817AA1653090C00DBAB71 /* iOSSunrise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSSunrise.h; path = Libraries/Sunrise/iOSSunrise.h; sourceTree = SOURCE_ROOT; };
+		CEB817AB1653090C00DBAB71 /* iOSSunrise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iOSSunrise.m; path = Libraries/Sunrise/iOSSunrise.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,9 +69,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB817A9165308E600DBAB71 /* libSunrise.a in Frameworks */,
 				CEB817411652FF3F00DBAB71 /* UIKit.framework in Frameworks */,
 				CEB817431652FF3F00DBAB71 /* Foundation.framework in Frameworks */,
 				CEB817451652FF3F00DBAB71 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB8179A165308D000DBAB71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB8179E165308D000DBAB71 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +90,11 @@
 		CEB817311652FF3E00DBAB71 = {
 			isa = PBXGroup;
 			children = (
+				CEB8177C1653042E00DBAB71 /* Foundation.framework */,
 				CEB817461652FF3F00DBAB71 /* Soto.Katie_asgt6 */,
+				CEB817601653002F00DBAB71 /* Libraries */,
+				CEB817611653005C00DBAB71 /* Resources */,
+				CEB8179F165308D000DBAB71 /* Sunrise */,
 				CEB8173F1652FF3F00DBAB71 /* Frameworks */,
 				CEB8173D1652FF3F00DBAB71 /* Products */,
 			);
@@ -62,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB8173C1652FF3F00DBAB71 /* Soto.Katie_asgt6.app */,
+				CEB8179D165308D000DBAB71 /* libSunrise.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +144,51 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CEB817601653002F00DBAB71 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CEB8176D165302A300DBAB71 /* Sunrise */,
+			);
+			name = Libraries;
+			path = Soto.Katie_asgt6;
+			sourceTree = "<group>";
+		};
+		CEB817611653005C00DBAB71 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEB81795165307B700DBAB71 /* us_only.sq3 */,
+				CEB81796165307B700DBAB71 /* us_only.sq3.zip */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CEB8176D165302A300DBAB71 /* Sunrise */ = {
+			isa = PBXGroup;
+			children = (
+				CEB817AA1653090C00DBAB71 /* iOSSunrise.h */,
+				CEB817AB1653090C00DBAB71 /* iOSSunrise.m */,
+			);
+			name = Sunrise;
+			sourceTree = "<group>";
+		};
+		CEB8179F165308D000DBAB71 /* Sunrise */ = {
+			isa = PBXGroup;
+			children = (
+				CEB817A2165308D000DBAB71 /* Sunrise.h */,
+				CEB817A4165308D000DBAB71 /* Sunrise.m */,
+				CEB817A0165308D000DBAB71 /* Supporting Files */,
+			);
+			path = Sunrise;
+			sourceTree = "<group>";
+		};
+		CEB817A0165308D000DBAB71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEB817A1165308D000DBAB71 /* Sunrise-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +208,23 @@
 			productName = Soto.Katie_asgt6;
 			productReference = CEB8173C1652FF3F00DBAB71 /* Soto.Katie_asgt6.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CEB8179C165308D000DBAB71 /* Sunrise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB817A6165308D000DBAB71 /* Build configuration list for PBXNativeTarget "Sunrise" */;
+			buildPhases = (
+				CEB81799165308D000DBAB71 /* Sources */,
+				CEB8179A165308D000DBAB71 /* Frameworks */,
+				CEB8179B165308D000DBAB71 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sunrise;
+			productName = Sunrise;
+			productReference = CEB8179D165308D000DBAB71 /* libSunrise.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -143,6 +248,7 @@
 			projectRoot = "";
 			targets = (
 				CEB8173B1652FF3E00DBAB71 /* Soto.Katie_asgt6 */,
+				CEB8179C165308D000DBAB71 /* Sunrise */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +261,8 @@
 				CEB8174B1652FF3F00DBAB71 /* InfoPlist.strings in Resources */,
 				CEB817541652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard in Resources */,
 				CEB817571652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard in Resources */,
+				CEB81797165307B700DBAB71 /* us_only.sq3 in Resources */,
+				CEB81798165307B700DBAB71 /* us_only.sq3.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +276,15 @@
 				CEB8174D1652FF3F00DBAB71 /* main.m in Sources */,
 				CEB817511652FF3F00DBAB71 /* AppDelegate.m in Sources */,
 				CEB8175A1652FF3F00DBAB71 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB81799165308D000DBAB71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB817A5165308D000DBAB71 /* Sunrise.m in Sources */,
+				CEB817AC1653090C00DBAB71 /* iOSSunrise.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +391,30 @@
 			};
 			name = Release;
 		};
+		CEB817A7165308D000DBAB71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Sunrise.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sunrise/Sunrise-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CEB817A8165308D000DBAB71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Sunrise.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sunrise/Sunrise-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -291,6 +432,14 @@
 			buildConfigurations = (
 				CEB8175E1652FF3F00DBAB71 /* Debug */,
 				CEB8175F1652FF3F00DBAB71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEB817A6165308D000DBAB71 /* Build configuration list for PBXNativeTarget "Sunrise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB817A7165308D000DBAB71 /* Debug */,
+				CEB817A8165308D000DBAB71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
