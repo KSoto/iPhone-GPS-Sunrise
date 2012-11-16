@@ -26,6 +26,9 @@
 		CEBECE6A1656FC9A009877FB /* icon_small_settings1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE691656FC9A009877FB /* icon_small_settings1.png */; };
 		CEBECE6C1657005C009877FB /* go_previous_black.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE6B1657005C009877FB /* go_previous_black.png */; };
 		CEBECE6F16570152009877FB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBECE6E16570152009877FB /* SettingsViewController.m */; };
+		CEBECE721657031D009877FB /* GPSLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBECE711657031D009877FB /* GPSLocatorViewController.m */; };
+		CEBECE7516570338009877FB /* ManualLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBECE7416570338009877FB /* ManualLocatorViewController.m */; };
+		CEBECE7B16570429009877FB /* HouseBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE7916570429009877FB /* HouseBlack.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +72,11 @@
 		CEBECE6B1657005C009877FB /* go_previous_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = go_previous_black.png; path = Resources/go_previous_black.png; sourceTree = "<group>"; };
 		CEBECE6D16570152009877FB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		CEBECE6E16570152009877FB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		CEBECE701657031D009877FB /* GPSLocatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSLocatorViewController.h; sourceTree = "<group>"; };
+		CEBECE711657031D009877FB /* GPSLocatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSLocatorViewController.m; sourceTree = "<group>"; };
+		CEBECE7316570338009877FB /* ManualLocatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualLocatorViewController.h; sourceTree = "<group>"; };
+		CEBECE7416570338009877FB /* ManualLocatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualLocatorViewController.m; sourceTree = "<group>"; };
+		CEBECE7916570429009877FB /* HouseBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HouseBlack.png; path = Resources/HouseBlack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,10 @@
 				CEBECE631656FAB5009877FB /* MainViewController.m */,
 				CEBECE6D16570152009877FB /* SettingsViewController.h */,
 				CEBECE6E16570152009877FB /* SettingsViewController.m */,
+				CEBECE701657031D009877FB /* GPSLocatorViewController.h */,
+				CEBECE711657031D009877FB /* GPSLocatorViewController.m */,
+				CEBECE7316570338009877FB /* ManualLocatorViewController.h */,
+				CEBECE7416570338009877FB /* ManualLocatorViewController.m */,
 				CEB817471652FF3F00DBAB71 /* Supporting Files */,
 			);
 			path = Soto.Katie_asgt6;
@@ -165,6 +177,7 @@
 			children = (
 				CEBECE5E1656F94B009877FB /* Moon-Phase-Full-icon.png */,
 				CEBECE6B1657005C009877FB /* go_previous_black.png */,
+				CEBECE7916570429009877FB /* HouseBlack.png */,
 				CEBECE691656FC9A009877FB /* icon_small_settings1.png */,
 				CEBECE5F1656F94B009877FB /* Sunrise-icon.png */,
 				CEB81795165307B700DBAB71 /* us_only.sq3 */,
@@ -277,6 +290,7 @@
 				CEBECE611656F94B009877FB /* Sunrise-icon.png in Resources */,
 				CEBECE6A1656FC9A009877FB /* icon_small_settings1.png in Resources */,
 				CEBECE6C1657005C009877FB /* go_previous_black.png in Resources */,
+				CEBECE7B16570429009877FB /* HouseBlack.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +305,8 @@
 				CEB817511652FF3F00DBAB71 /* AppDelegate.m in Sources */,
 				CEBECE641656FAB5009877FB /* MainViewController.m in Sources */,
 				CEBECE6F16570152009877FB /* SettingsViewController.m in Sources */,
+				CEBECE721657031D009877FB /* GPSLocatorViewController.m in Sources */,
+				CEBECE7516570338009877FB /* ManualLocatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
