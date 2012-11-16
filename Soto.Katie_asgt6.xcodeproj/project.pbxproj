@@ -14,8 +14,6 @@
 		CEB8174D1652FF3F00DBAB71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8174C1652FF3F00DBAB71 /* main.m */; };
 		CEB817511652FF3F00DBAB71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB817501652FF3F00DBAB71 /* AppDelegate.m */; };
 		CEB817541652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB817521652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard */; };
-		CEB817571652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB817551652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard */; };
-		CEB8175A1652FF3F00DBAB71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB817591652FF3F00DBAB71 /* ViewController.m */; };
 		CEB81797165307B700DBAB71 /* us_only.sq3 in Resources */ = {isa = PBXBuildFile; fileRef = CEB81795165307B700DBAB71 /* us_only.sq3 */; };
 		CEB8179E165308D000DBAB71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
 		CEB817A3165308D000DBAB71 /* Sunrise.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEB817A2165308D000DBAB71 /* Sunrise.h */; };
@@ -24,6 +22,10 @@
 		CEB817AC1653090C00DBAB71 /* iOSSunrise.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB817AB1653090C00DBAB71 /* iOSSunrise.m */; };
 		CEBECE601656F94B009877FB /* Moon-Phase-Full-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE5E1656F94B009877FB /* Moon-Phase-Full-icon.png */; };
 		CEBECE611656F94B009877FB /* Sunrise-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE5F1656F94B009877FB /* Sunrise-icon.png */; };
+		CEBECE641656FAB5009877FB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBECE631656FAB5009877FB /* MainViewController.m */; };
+		CEBECE6A1656FC9A009877FB /* icon_small_settings1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE691656FC9A009877FB /* icon_small_settings1.png */; };
+		CEBECE6C1657005C009877FB /* go_previous_black.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE6B1657005C009877FB /* go_previous_black.png */; };
+		CEBECE6F16570152009877FB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBECE6E16570152009877FB /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,9 +53,6 @@
 		CEB8174F1652FF3F00DBAB71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEB817501652FF3F00DBAB71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CEB817531652FF3F00DBAB71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		CEB817561652FF3F00DBAB71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CEB817581652FF3F00DBAB71 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEB817591652FF3F00DBAB71 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEB8177C1653042E00DBAB71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CEB81795165307B700DBAB71 /* us_only.sq3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = us_only.sq3; path = Resources/us_only.sq3; sourceTree = "<group>"; };
 		CEB8179D165308D000DBAB71 /* libSunrise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSunrise.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +63,12 @@
 		CEB817AB1653090C00DBAB71 /* iOSSunrise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iOSSunrise.m; path = Libraries/Sunrise/iOSSunrise.m; sourceTree = SOURCE_ROOT; };
 		CEBECE5E1656F94B009877FB /* Moon-Phase-Full-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Moon-Phase-Full-icon.png"; path = "Resources/Moon-Phase-Full-icon.png"; sourceTree = "<group>"; };
 		CEBECE5F1656F94B009877FB /* Sunrise-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sunrise-icon.png"; path = "Resources/Sunrise-icon.png"; sourceTree = "<group>"; };
+		CEBECE621656FAB5009877FB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CEBECE631656FAB5009877FB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CEBECE691656FC9A009877FB /* icon_small_settings1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_small_settings1.png; path = Resources/icon_small_settings1.png; sourceTree = "<group>"; };
+		CEBECE6B1657005C009877FB /* go_previous_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = go_previous_black.png; path = Resources/go_previous_black.png; sourceTree = "<group>"; };
+		CEBECE6D16570152009877FB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		CEBECE6E16570152009877FB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +131,10 @@
 				CEB8174F1652FF3F00DBAB71 /* AppDelegate.h */,
 				CEB817501652FF3F00DBAB71 /* AppDelegate.m */,
 				CEB817521652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard */,
-				CEB817551652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard */,
-				CEB817581652FF3F00DBAB71 /* ViewController.h */,
-				CEB817591652FF3F00DBAB71 /* ViewController.m */,
+				CEBECE621656FAB5009877FB /* MainViewController.h */,
+				CEBECE631656FAB5009877FB /* MainViewController.m */,
+				CEBECE6D16570152009877FB /* SettingsViewController.h */,
+				CEBECE6E16570152009877FB /* SettingsViewController.m */,
 				CEB817471652FF3F00DBAB71 /* Supporting Files */,
 			);
 			path = Soto.Katie_asgt6;
@@ -158,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				CEBECE5E1656F94B009877FB /* Moon-Phase-Full-icon.png */,
+				CEBECE6B1657005C009877FB /* go_previous_black.png */,
+				CEBECE691656FC9A009877FB /* icon_small_settings1.png */,
 				CEBECE5F1656F94B009877FB /* Sunrise-icon.png */,
 				CEB81795165307B700DBAB71 /* us_only.sq3 */,
 			);
@@ -264,10 +272,11 @@
 			files = (
 				CEB8174B1652FF3F00DBAB71 /* InfoPlist.strings in Resources */,
 				CEB817541652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard in Resources */,
-				CEB817571652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard in Resources */,
 				CEB81797165307B700DBAB71 /* us_only.sq3 in Resources */,
 				CEBECE601656F94B009877FB /* Moon-Phase-Full-icon.png in Resources */,
 				CEBECE611656F94B009877FB /* Sunrise-icon.png in Resources */,
+				CEBECE6A1656FC9A009877FB /* icon_small_settings1.png in Resources */,
+				CEBECE6C1657005C009877FB /* go_previous_black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +289,8 @@
 			files = (
 				CEB8174D1652FF3F00DBAB71 /* main.m in Sources */,
 				CEB817511652FF3F00DBAB71 /* AppDelegate.m in Sources */,
-				CEB8175A1652FF3F00DBAB71 /* ViewController.m in Sources */,
+				CEBECE641656FAB5009877FB /* MainViewController.m in Sources */,
+				CEBECE6F16570152009877FB /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,14 +320,6 @@
 				CEB817531652FF3F00DBAB71 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		CEB817551652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEB817561652FF3F00DBAB71 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -381,6 +383,7 @@
 				GCC_PREFIX_HEADER = "Soto.Katie_asgt6/Soto.Katie_asgt6-Prefix.pch";
 				INFOPLIST_FILE = "Soto.Katie_asgt6/Soto.Katie_asgt6-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,6 +395,7 @@
 				GCC_PREFIX_HEADER = "Soto.Katie_asgt6/Soto.Katie_asgt6-Prefix.pch";
 				INFOPLIST_FILE = "Soto.Katie_asgt6/Soto.Katie_asgt6-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
