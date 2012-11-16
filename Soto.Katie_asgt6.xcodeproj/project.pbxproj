@@ -17,12 +17,13 @@
 		CEB817571652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB817551652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard */; };
 		CEB8175A1652FF3F00DBAB71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB817591652FF3F00DBAB71 /* ViewController.m */; };
 		CEB81797165307B700DBAB71 /* us_only.sq3 in Resources */ = {isa = PBXBuildFile; fileRef = CEB81795165307B700DBAB71 /* us_only.sq3 */; };
-		CEB81798165307B700DBAB71 /* us_only.sq3.zip in Resources */ = {isa = PBXBuildFile; fileRef = CEB81796165307B700DBAB71 /* us_only.sq3.zip */; };
 		CEB8179E165308D000DBAB71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
 		CEB817A3165308D000DBAB71 /* Sunrise.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEB817A2165308D000DBAB71 /* Sunrise.h */; };
 		CEB817A5165308D000DBAB71 /* Sunrise.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB817A4165308D000DBAB71 /* Sunrise.m */; };
 		CEB817A9165308E600DBAB71 /* libSunrise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB8179D165308D000DBAB71 /* libSunrise.a */; };
 		CEB817AC1653090C00DBAB71 /* iOSSunrise.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB817AB1653090C00DBAB71 /* iOSSunrise.m */; };
+		CEBECE601656F94B009877FB /* Moon-Phase-Full-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE5E1656F94B009877FB /* Moon-Phase-Full-icon.png */; };
+		CEBECE611656F94B009877FB /* Sunrise-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE5F1656F94B009877FB /* Sunrise-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,13 +56,14 @@
 		CEB817591652FF3F00DBAB71 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEB8177C1653042E00DBAB71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CEB81795165307B700DBAB71 /* us_only.sq3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = us_only.sq3; path = Resources/us_only.sq3; sourceTree = "<group>"; };
-		CEB81796165307B700DBAB71 /* us_only.sq3.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = us_only.sq3.zip; path = Resources/us_only.sq3.zip; sourceTree = "<group>"; };
 		CEB8179D165308D000DBAB71 /* libSunrise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSunrise.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB817A1165308D000DBAB71 /* Sunrise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sunrise-Prefix.pch"; sourceTree = "<group>"; };
 		CEB817A2165308D000DBAB71 /* Sunrise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sunrise.h; sourceTree = "<group>"; };
 		CEB817A4165308D000DBAB71 /* Sunrise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sunrise.m; sourceTree = "<group>"; };
 		CEB817AA1653090C00DBAB71 /* iOSSunrise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSSunrise.h; path = Libraries/Sunrise/iOSSunrise.h; sourceTree = SOURCE_ROOT; };
 		CEB817AB1653090C00DBAB71 /* iOSSunrise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iOSSunrise.m; path = Libraries/Sunrise/iOSSunrise.m; sourceTree = SOURCE_ROOT; };
+		CEBECE5E1656F94B009877FB /* Moon-Phase-Full-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Moon-Phase-Full-icon.png"; path = "Resources/Moon-Phase-Full-icon.png"; sourceTree = "<group>"; };
+		CEBECE5F1656F94B009877FB /* Sunrise-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sunrise-icon.png"; path = "Resources/Sunrise-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,11 +92,9 @@
 		CEB817311652FF3E00DBAB71 = {
 			isa = PBXGroup;
 			children = (
-				CEB8177C1653042E00DBAB71 /* Foundation.framework */,
 				CEB817461652FF3F00DBAB71 /* Soto.Katie_asgt6 */,
 				CEB817601653002F00DBAB71 /* Libraries */,
 				CEB817611653005C00DBAB71 /* Resources */,
-				CEB8179F165308D000DBAB71 /* Sunrise */,
 				CEB8173F1652FF3F00DBAB71 /* Frameworks */,
 				CEB8173D1652FF3F00DBAB71 /* Products */,
 			);
@@ -112,6 +112,7 @@
 		CEB8173F1652FF3F00DBAB71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEB8177C1653042E00DBAB71 /* Foundation.framework */,
 				CEB817401652FF3F00DBAB71 /* UIKit.framework */,
 				CEB817421652FF3F00DBAB71 /* Foundation.framework */,
 				CEB817441652FF3F00DBAB71 /* CoreGraphics.framework */,
@@ -156,8 +157,9 @@
 		CEB817611653005C00DBAB71 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CEBECE5E1656F94B009877FB /* Moon-Phase-Full-icon.png */,
+				CEBECE5F1656F94B009877FB /* Sunrise-icon.png */,
 				CEB81795165307B700DBAB71 /* us_only.sq3 */,
-				CEB81796165307B700DBAB71 /* us_only.sq3.zip */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -167,6 +169,7 @@
 			children = (
 				CEB817AA1653090C00DBAB71 /* iOSSunrise.h */,
 				CEB817AB1653090C00DBAB71 /* iOSSunrise.m */,
+				CEB8179F165308D000DBAB71 /* Sunrise */,
 			);
 			name = Sunrise;
 			sourceTree = "<group>";
@@ -178,7 +181,8 @@
 				CEB817A4165308D000DBAB71 /* Sunrise.m */,
 				CEB817A0165308D000DBAB71 /* Supporting Files */,
 			);
-			path = Sunrise;
+			name = Sunrise;
+			path = ../Sunrise;
 			sourceTree = "<group>";
 		};
 		CEB817A0165308D000DBAB71 /* Supporting Files */ = {
@@ -262,7 +266,8 @@
 				CEB817541652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard in Resources */,
 				CEB817571652FF3F00DBAB71 /* MainStoryboard_iPad.storyboard in Resources */,
 				CEB81797165307B700DBAB71 /* us_only.sq3 in Resources */,
-				CEB81798165307B700DBAB71 /* us_only.sq3.zip in Resources */,
+				CEBECE601656F94B009877FB /* Moon-Phase-Full-icon.png in Resources */,
+				CEBECE611656F94B009877FB /* Sunrise-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +439,7 @@
 				CEB8175F1652FF3F00DBAB71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEB817A6165308D000DBAB71 /* Build configuration list for PBXNativeTarget "Sunrise" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +448,7 @@
 				CEB817A8165308D000DBAB71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
