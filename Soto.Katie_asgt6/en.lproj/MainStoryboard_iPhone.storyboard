@@ -168,6 +168,9 @@
                                 <rect key="frame" x="13" y="248" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.79372608418367352" green="0.7928206943972167" blue="0.0016416275778455836" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="toggleEnabledForCivil:" destination="Ukz-Ww-CoC" eventType="valueChanged" id="9rE-Qn-Kuy"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Official" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="LFQ-Cr-ouB">
                                 <rect key="frame" x="100" y="283" width="215" height="46"/>
@@ -180,6 +183,9 @@
                                 <rect key="frame" x="13" y="292" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.79372608420000001" green="0.79282069440000003" blue="0.001641627578" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="toggleEnabledForOfficial:" destination="Ukz-Ww-CoC" eventType="valueChanged" id="7qE-Ey-a9w"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nautical" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ETI-az-VA7">
                                 <rect key="frame" x="100" y="327" width="228" height="46"/>
@@ -192,6 +198,9 @@
                                 <rect key="frame" x="13" y="336" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.79372608420000001" green="0.79282069440000003" blue="0.001641627578" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="toggleEnabledForNautical:" destination="Ukz-Ww-CoC" eventType="valueChanged" id="2yG-6x-MJi"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Astronomical" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="kNE-t0-LkV">
                                 <rect key="frame" x="100" y="371" width="271" height="46"/>
@@ -204,6 +213,9 @@
                                 <rect key="frame" x="13" y="380" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.79372608420000001" green="0.79282069440000003" blue="0.001641627578" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="toggleEnabledForAstro:" destination="Ukz-Ww-CoC" eventType="valueChanged" id="C61-dV-IFt"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sunrise &amp; Sunset Times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="Nxk-Ff-j9M">
                                 <rect key="frame" x="-44" y="194" width="408" height="46"/>
@@ -250,6 +262,12 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="KpL-fj-7LJ"/>
+                    <connections>
+                        <outlet property="astro" destination="v78-dw-wWr" id="AUv-lH-NCi"/>
+                        <outlet property="civil" destination="fId-ls-nqB" id="oUw-xt-8Pu"/>
+                        <outlet property="nautical" destination="XoV-GW-AdF" id="3bi-pK-kxp"/>
+                        <outlet property="official" destination="xiJ-tg-H80" id="63W-dE-OG2"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="420" y="182"/>
@@ -518,6 +536,10 @@
         <class className="SettingsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="toggleEnabledForAstro:"/>
+                <relationship kind="action" name="toggleEnabledForCivil:"/>
+                <relationship kind="action" name="toggleEnabledForNautical:"/>
+                <relationship kind="action" name="toggleEnabledForOfficial:"/>
                 <relationship kind="outlet" name="astro" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="civil" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="nautical" candidateClass="UISwitch"/>
