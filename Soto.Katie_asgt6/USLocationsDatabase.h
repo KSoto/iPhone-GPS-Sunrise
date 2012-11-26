@@ -24,10 +24,10 @@
 
 @interface USLocationsDatabase : NSObject
 {
-    sqlite3* _SQLdatabase;
+    sqlite3* _database;
 }
 
-+ (USLocationsDatabase*) SQLdatabase;
++ (USLocationsDatabase*) database;
 - (NSArray*) someLocations;
 - (NSArray*) allLocations;
 

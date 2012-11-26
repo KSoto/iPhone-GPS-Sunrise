@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Location.h"
+#import "USLocationsDatabase.h"
 
-@interface ManualLocatorViewController : UIViewController
+@interface ManualLocatorViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    NSArray* _locations;
+    IBOutlet UITableView *tableView;
+}
+
+@property (nonatomic, retain) NSArray* locations;
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
 
 @end
