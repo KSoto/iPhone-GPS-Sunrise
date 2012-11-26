@@ -47,11 +47,13 @@
     if (civil.on)
     {
         self.myInterface.civil = TRUE;
-        NSLog(@"\n setting civil to TRUE");
+        //THIS IS NOT WORKING
+        NSLog(@"\n setting civil to TRUE, %@", self.myInterface.civil);
     }else if(!civil.on)
     {
         self.myInterface.civil = FALSE;
-        NSLog(@"\n setting civil to FALSE");
+        //THIS IS NOT WORKING
+        NSLog(@"\n setting civil to FALSE, %@", self.myInterface.civil);
     }
 }
 
