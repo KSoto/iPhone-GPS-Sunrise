@@ -9,5 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsViewController : UIViewController
+{
+    IBOutlet UISwitch* civil;
+    IBOutlet UISwitch* official;
+    IBOutlet UISwitch* nautical;
+    IBOutlet UISwitch* astro;
+}
+
+@property (retain, nonatomic) IBOutlet UISwitch* civil;
+@property (retain, nonatomic) IBOutlet UISwitch* official;
+@property (retain, nonatomic) IBOutlet UISwitch* nautical;
+@property (retain, nonatomic) IBOutlet UISwitch* astro;
 
 @end

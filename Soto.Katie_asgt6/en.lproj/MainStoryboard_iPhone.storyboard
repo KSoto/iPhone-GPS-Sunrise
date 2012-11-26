@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Sunrise-icon.png" id="SxD-jl-wLd">
-                                <rect key="frame" x="31" y="102" width="147" height="146"/>
+                                <rect key="frame" x="87" y="100" width="147" height="146"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Moon-Phase-Full-icon.png" id="sAG-Jd-OvO">
@@ -37,10 +37,76 @@
                                     <segue destination="Ukz-Ww-CoC" kind="modal" modalTransitionStyle="flipHorizontal" id="Rvl-XI-xRp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pji-lB-uIt">
+                                <rect key="frame" x="7" y="91" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="bV0-Fg-9NU">
+                                <rect key="frame" x="7" y="117" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1Ft-LN-Ikz">
+                                <rect key="frame" x="7" y="141" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="C0k-uE-IVf">
+                                <rect key="frame" x="7" y="167" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="t1b-9T-iQ3">
+                                <rect key="frame" x="207" y="91" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="74g-qh-CF2">
+                                <rect key="frame" x="207" y="117" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2B4-Sp-7Bf">
+                                <rect key="frame" x="207" y="141" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aJI-Xq-ST4">
+                                <rect key="frame" x="207" y="167" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="oWH-7e-NW0"/>
+                    <connections>
+                        <outlet property="_astroSunriseLabel" destination="C0k-uE-IVf" id="L3j-yq-TP5"/>
+                        <outlet property="_astroSunsetLabel" destination="aJI-Xq-ST4" id="ZWT-bu-E9q"/>
+                        <outlet property="_civilSunriseLabel" destination="pji-lB-uIt" id="kE1-j2-m41"/>
+                        <outlet property="_civilSunsetLabel" destination="t1b-9T-iQ3" id="bAG-AN-bIl"/>
+                        <outlet property="_nauticalSunriseLabel" destination="1Ft-LN-Ikz" id="WkK-H1-Hel"/>
+                        <outlet property="_nauticalSunsetLabel" destination="2B4-Sp-7Bf" id="1fL-nb-1Bu"/>
+                        <outlet property="_officialSunriseLabel" destination="bV0-Fg-9NU" id="nEm-M2-eQI"/>
+                        <outlet property="_officialSunsetLabel" destination="74g-qh-CF2" id="dag-Nh-3gI"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="17" y="182"/>
@@ -418,6 +484,24 @@
         </class>
         <class className="MainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="_astroSunriseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_astroSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_civilSunriseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_civilSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_nauticalSunriseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_nauticalSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_officialSunriseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_officialSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="astroSunriseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="astroSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="civilSunriseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="civilSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nauticalSunriseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nauticalSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="officialSunriseLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="officialSunsetLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="ManualLocatorCITYViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ManualLocatorCITYViewController.h"/>
@@ -433,6 +517,12 @@
         </class>
         <class className="SettingsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="astro" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="civil" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="nautical" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="official" candidateClass="UISwitch"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -440,4 +530,9 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Rvl-XI-xRp"/>
+        <segue reference="JfD-cU-FuP"/>
+        <segue reference="2fR-RX-Vaz"/>
+    </inferredMetricsTieBreakers>
 </document>

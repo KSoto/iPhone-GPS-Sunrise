@@ -7,12 +7,42 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iOSSunrise.h"
+#import "Sunrise.h" //doesn't have anything in it, but I want to include it anyway...
 
 @interface MainViewController : UIViewController
 {
-    NSString* _cityName;
+    NSObject* _cityObject;
+    IBOutlet UILabel* _civilSunriseLabel;
+    IBOutlet UILabel* _officialSunriseLabel;
+    IBOutlet UILabel* _nauticalSunriseLabel;
+    IBOutlet UILabel* _astroSunriseLabel;
+    
+    IBOutlet UILabel* _civilSunsetLabel;
+    IBOutlet UILabel* _officialSunsetLabel;
+    IBOutlet UILabel* _nauticalSunsetLabel;
+    IBOutlet UILabel* _astroSunsetLabel;
+    
+    BOOL civil;
+    BOOL official;
+    BOOL nautical;
+    BOOL astro;
 }
 
-@property (nonatomic, retain) NSString* cityName;
+@property (nonatomic, retain) NSObject* cityObject;
+@property (retain, nonatomic) IBOutlet UILabel* civilSunriseLabel;
+@property (retain, nonatomic) IBOutlet UILabel* officialSunriseLabel;
+@property (retain, nonatomic) IBOutlet UILabel* nauticalSunriseLabel;
+@property (retain, nonatomic) IBOutlet UILabel* astroSunriseLabel;
+
+@property (retain, nonatomic) IBOutlet UILabel* civilSunsetLabel;
+@property (retain, nonatomic) IBOutlet UILabel* officialSunsetLabel;
+@property (retain, nonatomic) IBOutlet UILabel* nauticalSunsetLabel;
+@property (retain, nonatomic) IBOutlet UILabel* astroSunsetLabel;
+
+@property (assign) BOOL civil;
+@property (assign) BOOL official;
+@property (assign) BOOL nautical;
+@property (assign) BOOL astro;
 
 @end

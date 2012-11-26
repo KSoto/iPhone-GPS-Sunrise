@@ -10,4 +10,9 @@
 
 @implementation SettingsViewController
 
+@synthesize civil;
+@synthesize official;
+@synthesize nautical;
+@synthesize astro;
+
 @end

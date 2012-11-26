@@ -91,7 +91,7 @@
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         MainViewController *destViewController = segue.destinationViewController;
-        destViewController.cityName = [self.cities objectAtIndex: indexPath.row];
+        destViewController.cityObject = [self.cities objectAtIndex: indexPath.row];
     }
 }
 
