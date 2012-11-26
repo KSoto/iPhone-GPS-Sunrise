@@ -30,5 +30,7 @@
 + (USLocationsDatabase*) database;
 - (NSArray*) someLocations;
 - (NSArray*) allLocations;
+- (NSArray*) allRegions;
+- (NSArray*) allLocationsInRegion: (NSString*) selectedRegion;
 
 @end

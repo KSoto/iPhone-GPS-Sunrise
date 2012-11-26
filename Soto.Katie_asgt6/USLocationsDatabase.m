@@ -35,6 +35,100 @@ static USLocationsDatabase* _database;
 {
     sqlite3_close(_database);
 }
+- (NSArray*) allRegions
+{
+    NSMutableArray* rv = [[NSMutableArray alloc] init];
+    NSString* query = @"SELECT DISTINCT region FROM sol_places";
+    sqlite3_stmt *stmt;
+    const unsigned char* text;
+    NSString *name, *uc_name, *uc_alt_name, *region, *timezone;
+    double longitude, latitude;
+    if( sqlite3_prepare_v2(_database, [query UTF8String], [query length], &stmt, nil) == SQLITE_OK){
+        while( sqlite3_step(stmt) == SQLITE_ROW){
+            text = sqlite3_column_text(stmt, 0);
+            if( text )
+                name = [NSString stringWithCString: (const char*)text encoding:NSUTF8StringEncoding];
+            else
+                name = nil;
+            text = sqlite3_column_text(stmt, 1);
+            if(text)
+                uc_name = [NSString stringWithCString: (const char*)text encoding:NSUTF8StringEncoding];
+            else
+                uc_name = nil;
+            text = sqlite3_column_text(stmt, 2);
+            if(text)
+                uc_alt_name = [NSString stringWithCString: (const char*)text encoding:NSUTF8StringEncoding];
+            else
+                uc_alt_name = nil;
+            text = sqlite3_column_text(stmt, 3);
+            if(text)
+                region = [NSString stringWithCString: (const char*)text encoding:NSUTF8StringEncoding];
+            else
+                region = nil;
+            text = sqlite3_column_text(stmt, 6);
+            if(text)
+                timezone = [NSString stringWithCString: (const char*)text encoding:NSUTF8StringEncoding];
+            else
+                timezone = nil;
+            
+            longitude = sqlite3_column_double(stmt, 4);
+            latitude = sqlite3_column_double(stmt, 5);
+            CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(longitude, latitude);
+            Location *thisLocation = [[Location alloc] initWithName:name andUCName:uc_name andUCAltName:uc_alt_name andRegion:region andCoordinate:&coord andTimezone:timezone];
+            [rv addObject: thisLocation];
+        }
+        sqlite3_finalize(stmt);
+    }
+    return rv;    
+}
+
+- (NSArray*) allLocationsInRegion: (NSString*) selectedRegion
+{
+    NSMutableArray* rv = [[NSMutableArray alloc] init];
+    NSString* query = @"SELECT * FROM sol_places where region='US/CA'";
+    sqlite3_stmt *stmt;
+    const unsigned char* text;
+    NSString *name, *uc_name, *uc_alt_name, *region, *timezone;
+    double longitude, latitude;
+    if( sqlite3_prepare_v2(_database, [query UTF8String], [query length], &stmt, nil) == SQLITE_OK){
+        while( sqlite3_step(stmt) == SQLITE_ROW){
+            text = sqlite3_column_text(stmt, 0);
+            if( text )
+                name = [NSString stringWithCString: (const char*)text encoding:NSUTF8StringEncoding];
+            else
+                name = nil;
+            text = sqlite3_column_text(stmt, 1);
+            if(text)
+                uc_name = [NSString stringWithCString: (const char*)text encoding:NSUTF8StringEncoding];
+            else
+                uc_name = nil;
+            text = sqlite3_column_text(stmt, 2);
+            if(text)
+                uc_alt_name = [NSString stringWithCString: (const char*)text encoding:NSUTF8StringEncoding];
+            else
+                uc_alt_name = nil;
+            text = sqlite3_column_text(stmt, 3);
+            if(text)
+                region = [NSString stringWithCString: (const char*)text encoding:NSUTF8StringEncoding];
+            else
+                region = nil;
+            text = sqlite3_column_text(stmt, 6);
+            if(text)
+                timezone = [NSString stringWithCString: (const char*)text encoding:NSUTF8StringEncoding];
+            else
+                timezone = nil;
+            
+            longitude = sqlite3_column_double(stmt, 4);
+            latitude = sqlite3_column_double(stmt, 5);
+            CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(longitude, latitude);
+            Location *thisLocation = [[Location alloc] initWithName:name andUCName:uc_name andUCAltName:uc_alt_name andRegion:region andCoordinate:&coord andTimezone:timezone];
+            [rv addObject: thisLocation];
+        }
+        sqlite3_finalize(stmt);
+    }
+    return rv;
+    
+}
 
 - (NSArray*) someLocations
 {

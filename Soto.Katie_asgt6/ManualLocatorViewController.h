@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Location.h"
 #import "USLocationsDatabase.h"
+#import "ManualLocatorCITYViewController.h"
 
 @interface ManualLocatorViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {

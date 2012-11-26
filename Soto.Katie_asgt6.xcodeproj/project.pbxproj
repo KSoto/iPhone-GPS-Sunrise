@@ -11,6 +11,7 @@
 		AC45A1921664174C005783FD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A1911664174C005783FD /* Location.m */; };
 		AC45A19416641A62005783FD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45A19316641A62005783FD /* libsqlite3.dylib */; };
 		AC45A19616641A6C005783FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45A19516641A6C005783FD /* CoreLocation.framework */; };
+		AC45A19916641F12005783FD /* ManualLocatorCITYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A19816641F12005783FD /* ManualLocatorCITYViewController.m */; };
 		CEB817411652FF3F00DBAB71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817401652FF3F00DBAB71 /* UIKit.framework */; };
 		CEB817431652FF3F00DBAB71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
 		CEB817451652FF3F00DBAB71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817441652FF3F00DBAB71 /* CoreGraphics.framework */; };
@@ -55,6 +56,8 @@
 		AC45A1911664174C005783FD /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		AC45A19316641A62005783FD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		AC45A19516641A6C005783FD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AC45A19716641F11005783FD /* ManualLocatorCITYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualLocatorCITYViewController.h; sourceTree = "<group>"; };
+		AC45A19816641F12005783FD /* ManualLocatorCITYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualLocatorCITYViewController.m; sourceTree = "<group>"; };
 		CEB8173C1652FF3F00DBAB71 /* Soto.Katie_asgt6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soto.Katie_asgt6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB817401652FF3F00DBAB71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEB817421652FF3F00DBAB71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -161,6 +164,8 @@
 				CEBECE711657031D009877FB /* GPSLocatorViewController.m */,
 				CEBECE7316570338009877FB /* ManualLocatorViewController.h */,
 				CEBECE7416570338009877FB /* ManualLocatorViewController.m */,
+				AC45A19716641F11005783FD /* ManualLocatorCITYViewController.h */,
+				AC45A19816641F12005783FD /* ManualLocatorCITYViewController.m */,
 				AC45A1901664174C005783FD /* Location.h */,
 				AC45A1911664174C005783FD /* Location.m */,
 				AC45A18C1664148F005783FD /* USLocationsDatabase.h */,
@@ -327,6 +332,7 @@
 				CEBECE7516570338009877FB /* ManualLocatorViewController.m in Sources */,
 				AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */,
 				AC45A1921664174C005783FD /* Location.m in Sources */,
+				AC45A19916641F12005783FD /* ManualLocatorCITYViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
