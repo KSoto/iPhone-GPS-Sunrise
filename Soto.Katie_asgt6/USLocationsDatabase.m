@@ -85,7 +85,7 @@ static USLocationsDatabase* _database;
 - (NSArray*) allLocationsInRegion: (NSString*) selectedRegion
 {
     NSMutableArray* rv = [[NSMutableArray alloc] init];
-    NSString* query = @"SELECT * FROM sol_places where region='US/CA'";
+    NSString* query = [NSString stringWithFormat: @"SELECT * FROM sol_places where region='%@'", selectedRegion];
     sqlite3_stmt *stmt;
     const unsigned char* text;
     NSString *name, *uc_name, *uc_alt_name, *region, *timezone;

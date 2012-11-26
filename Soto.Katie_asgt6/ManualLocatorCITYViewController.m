@@ -14,6 +14,18 @@
 @synthesize cities = _cities;
 @synthesize tableView;
 @synthesize selectedRegion = _selectedRegion;
+@synthesize regionString = _regionString;
+
+//***********************************************
+//if a null pointer, we need to initalize it
+-(Location*) selectedRegion;
+{
+    if(_selectedRegion == nil)
+    {
+        _selectedRegion = [[Location alloc] init];
+    }
+    return _selectedRegion;
+}
 
 - (void)viewDidLoad
 {
@@ -24,7 +36,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.cities = [[USLocationsDatabase database] allLocationsInRegion:@"US/CA"];
+    self.regionString = self.selectedRegion.name;
+    self.cities = [[USLocationsDatabase database] allLocationsInRegion:self.regionString];
 }
 
 - (void)didReceiveMemoryWarning

@@ -58,12 +58,13 @@
     // Configure the cell...
     if (cell == nil) {
 		// Use the default cell style.
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
     }
     
     Location *location = [self.locations objectAtIndex: indexPath.row];
+    
     cell.textLabel.text = location.name;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%g, %g)", location.region, location.coord->longitude, location.coord->latitude];
+    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%g, %g)", location.region, location.coord->longitude, location.coord->latitude];
     
     return cell;
 }

@@ -10,16 +10,19 @@
 #import "Location.h"
 #import "USLocationsDatabase.h"
 #import "MainViewController.h"
+#import "Location.h"
 
 @interface ManualLocatorCITYViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     NSArray* _cities;
     IBOutlet UITableView *tableView;
-    NSString* _selectedRegion;
+    Location* _selectedRegion;
+    NSString* _regionString;
 }
 
 @property (nonatomic, retain) NSArray* cities;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
-@property (nonatomic, retain) NSString* selectedRegion;
+@property (nonatomic, retain) Location* selectedRegion;
+@property (nonatomic, retain) NSString* regionString;
 
 @end
