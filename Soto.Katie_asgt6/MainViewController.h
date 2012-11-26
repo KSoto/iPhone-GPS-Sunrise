@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
+{
+    NSString* _cityName;
+}
+
+@property (nonatomic, retain) NSString* cityName;
 
 @end

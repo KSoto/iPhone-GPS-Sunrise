@@ -344,7 +344,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="42G-fh-Poj" kind="modal" id="3zo-ua-hI4"/>
+                                    <segue destination="42G-fh-Poj" kind="modal" identifier="" id="3zo-ua-hI4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PaM-KM-bE4">
@@ -391,6 +391,9 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="2" kind="modal" identifier="setCity" id="IyJ-oZ-Cx8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -444,4 +447,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Rvl-XI-xRp"/>
+    </inferredMetricsTieBreakers>
 </document>

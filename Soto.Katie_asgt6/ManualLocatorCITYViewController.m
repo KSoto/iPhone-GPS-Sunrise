@@ -70,4 +70,16 @@
     return cell;
 }
 
+//***********************************************
+/* RETRIEVED FROM APPCODA.COM */
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"setCity"])
+    {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        MainViewController *destViewController = segue.destinationViewController;
+        destViewController.cityName = [self.cities objectAtIndex: indexPath.row];
+    }
+}
+
 @end

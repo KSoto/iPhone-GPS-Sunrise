@@ -14,6 +14,8 @@
 
 @implementation MainViewController
 
+@synthesize cityName = _cityName;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    NSLog(@"\nCity set to: %@", self.cityName);
 }
 
 - (void)viewDidUnload
