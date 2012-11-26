@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A18D1664148F005783FD /* USLocationsDatabase.m */; };
 		CEB817411652FF3F00DBAB71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817401652FF3F00DBAB71 /* UIKit.framework */; };
 		CEB817431652FF3F00DBAB71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
 		CEB817451652FF3F00DBAB71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817441652FF3F00DBAB71 /* CoreGraphics.framework */; };
@@ -45,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC45A18C1664148F005783FD /* USLocationsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USLocationsDatabase.h; sourceTree = "<group>"; };
+		AC45A18D1664148F005783FD /* USLocationsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USLocationsDatabase.m; sourceTree = "<group>"; };
 		CEB8173C1652FF3F00DBAB71 /* Soto.Katie_asgt6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soto.Katie_asgt6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB817401652FF3F00DBAB71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEB817421652FF3F00DBAB71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -147,6 +150,8 @@
 				CEBECE711657031D009877FB /* GPSLocatorViewController.m */,
 				CEBECE7316570338009877FB /* ManualLocatorViewController.h */,
 				CEBECE7416570338009877FB /* ManualLocatorViewController.m */,
+				AC45A18C1664148F005783FD /* USLocationsDatabase.h */,
+				AC45A18D1664148F005783FD /* USLocationsDatabase.m */,
 				CEB817471652FF3F00DBAB71 /* Supporting Files */,
 			);
 			path = Soto.Katie_asgt6;
@@ -307,6 +312,7 @@
 				CEBECE6F16570152009877FB /* SettingsViewController.m in Sources */,
 				CEBECE721657031D009877FB /* GPSLocatorViewController.m in Sources */,
 				CEBECE7516570338009877FB /* ManualLocatorViewController.m in Sources */,
+				AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
