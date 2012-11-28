@@ -209,9 +209,9 @@ double calculateSunriseOrSunset( struct tm* date, double latitude, double longit
     double h = floor(UT) - ( UT > 12.0 ? 12.0 : 0.0);
     double m = round((UT - floor(UT)) * 60.0 );
     
-    isRising ? printf( "Sunrise " ) : printf( "Sunset " );
-    printf( "%g:%02g", h, m );
-    UT > 12 ? printf( " PM\n") : printf( " AM\n" );
+    //isRising ? printf( "Sunrise " ) : printf( "Sunset " );
+    //printf( "%g:%02g", h, m );
+    //UT > 12 ? printf( " PM\n") : printf( " AM\n" );
     return(UT);
 }
 

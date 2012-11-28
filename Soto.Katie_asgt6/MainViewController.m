@@ -6,11 +6,9 @@
 //  Copyright (c) 2012 Katie Soto. All rights reserved.
 //
 
+//*****NOTE TO SELF: USE NSUSERDEFAULTS TO SET USER PREFERENCES EVEN AFTER YOU CLOSE THE APP********//
+
 #import "MainViewController.h"
-
-@interface MainViewController ()
-
-@end
 
 @implementation MainViewController
 
@@ -30,51 +28,78 @@
 @synthesize nautical;
 @synthesize astro;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
-    if(self.civil == NULL)
+    [super viewDidLoad];
+    
+    //each setting (civil, nautical, etc.) defaults to TRUE,
+    //so it's ON by DEFAULT
+    if((self.official == NULL)||(self.civil == nil))
     {
         self.civil = TRUE;
     }
-    if(self.official == NULL)
+    if((self.official == NULL)||(self.official == nil))
     {
         self.official = TRUE;
     }
-    if(self.nautical == NULL)
+    if((self.nautical == NULL)||(self.nautical == nil))
     {
         self.nautical = TRUE;
     }
-    if(self.astro == NULL)
+    if((self.astro == NULL)||(self.astro == nil))
     {
         self.astro = TRUE;
     }
+     
+//*******TESTING PURPOSES ONLY**********    
+    if(self.civil==TRUE)
+    {
+        NSLog(@"\nMAIN: self.civil set to true");
+    }else if(self.civil!=TRUE)
+    {
+        NSLog(@"\nMAIN: self.civil set to false");
+    }
     
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    NSLog(@"\nCity set to: %@", self.cityObject);
+    if(civil==TRUE)
+    {
+        NSLog(@"\nMAIN: civil set to true");
+    }else if(civil!=TRUE)
+    {
+        NSLog(@"\nMAIN: civil set to false");
+    }
+
     
-	// Do any additional setup after loading the view, typically from a nib.
+//***GETS THE CITY NAME SET BY THE USER****    
+    NSLog(@"\nLocation set to: %@", self.cityObject.name);
+    
+//Get current time    
     time_t now;
     struct tm* timeinfo;
-    // Fullerton
-    double lat = 33.87028;
-    double lon = -117.92444;
+    
+//***GETS THE LAT AND LOG FROM THE SELECTED CITY***
+    double lat;
+    double lon;
+    if(self.cityObject.name==NULL)
+    {
+        //location has NOT been set by the user, using default values...
+        lat = 33.87028;
+        lon = -117.92444;
+    }else{
+        //location has been previously set by the user
+//**TODO: THIS IS BROKEN, CURRENTLY USING DEFAULT VALUES**
+        //lat = self.cityObject.coord->latitude;
+        //lon = self.cityObject.coord->longitude;
+        lat = 33.87028;
+        lon = -117.92444;
+    }
+
     time( &now );
     timeinfo = localtime( &now );
 
-    printf ( "\nCurrent local time and date: %s", asctime(timeinfo) );
+    //printf ( "\nCurrent local time and date: %s", asctime(timeinfo) );
     
     //if civil is enabled...
-    if(civil)
+    if(self.civil==TRUE)
     {
         double sunrise = calculateSunriseOrSunset( timeinfo, lat, lon, CIVIL, YES );
         double sunrise_h = floor(sunrise) - ( sunrise > 12.0 ? 12.0 : 0.0);
@@ -87,7 +112,7 @@
         self.civilSunriseLabel.text = [NSString stringWithFormat:@"Sunrise: %g:%02g AM", sunrise_h, sunrise_m ];
         self.civilSunsetLabel.text = [NSString stringWithFormat:@"Sunset: %g:%02g PM", sunset_h, sunset_m ];
     }
-    if(official)
+    if(self.official==TRUE)
     {
         double sunrise = calculateSunriseOrSunset( timeinfo, lat, lon, OFFICIAL, YES );
         double sunrise_h = floor(sunrise) - ( sunrise > 12.0 ? 12.0 : 0.0);
@@ -100,7 +125,7 @@
         self.officialSunriseLabel.text = [NSString stringWithFormat:@"Sunrise: %g:%02g AM", sunrise_h, sunrise_m ];
         self.officialSunsetLabel.text = [NSString stringWithFormat:@"Sunset: %g:%02g PM", sunset_h, sunset_m ];
     }
-    if(nautical)
+    if(self.nautical==TRUE)
     {
         double sunrise = calculateSunriseOrSunset( timeinfo, lat, lon, NAUTICAL, YES );
         double sunrise_h = floor(sunrise) - ( sunrise > 12.0 ? 12.0 : 0.0);
@@ -113,7 +138,7 @@
         self.nauticalSunriseLabel.text = [NSString stringWithFormat:@"Sunrise: %g:%02g AM", sunrise_h, sunrise_m ];
         self.nauticalSunsetLabel.text = [NSString stringWithFormat:@"Sunset: %g:%02g PM", sunset_h, sunset_m ];
     }
-    if(astro)
+    if(self.astro==TRUE)
     {
         double sunrise = calculateSunriseOrSunset( timeinfo, lat, lon, ASTRONOMICAL, YES );
         double sunrise_h = floor(sunrise) - ( sunrise > 12.0 ? 12.0 : 0.0);

@@ -30,7 +30,9 @@
 
 - (void)viewDidLoad
 {
-    if(self.myInterface.civil == NULL)
+    //each setting (civil, nautical, etc.) defaults to TRUE,
+    //so it's ON by DEFAULT
+    if((self.myInterface.civil == NULL)||(self.myInterface.civil == nil))
     {
         self.civil.on = TRUE;
     }else if(self.myInterface.civil == FALSE)
@@ -40,6 +42,8 @@
     {
         self.civil.on = TRUE;
     }
+    
+    //TODO add the rest
 }
 
 - (IBAction) toggleEnabledForCivil: (id) sender
@@ -47,29 +51,43 @@
     if (civil.on)
     {
         self.myInterface.civil = TRUE;
-        //THIS IS NOT WORKING
-        NSLog(@"\n setting civil to TRUE, %@", self.myInterface.civil);
     }else if(!civil.on)
     {
         self.myInterface.civil = FALSE;
-        //THIS IS NOT WORKING
-        NSLog(@"\n setting civil to FALSE, %@", self.myInterface.civil);
     }
 }
 
 - (IBAction) toggleEnabledForOfficial: (id) sender
 {
-    
+    if (official.on)
+    {
+        self.myInterface.official = TRUE;
+    }else if(!civil.on)
+    {
+        self.myInterface.official = FALSE;
+    }
 }
 
 - (IBAction) toggleEnabledForNautical: (id) sender
 {
-    
+    if (nautical.on)
+    {
+        self.myInterface.nautical = TRUE;
+    }else if(!nautical.on)
+    {
+        self.myInterface.nautical = FALSE;
+    }
 }
 
 - (IBAction) toggleEnabledForAstro: (id) sender
 {
-    
+    if (astro.on)
+    {
+        self.myInterface.astro = TRUE;
+    }else if(!astro.on)
+    {
+        self.myInterface.astro = FALSE;
+    }
 }
 
 @end

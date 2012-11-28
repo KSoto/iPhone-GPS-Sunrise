@@ -15,10 +15,10 @@
     IBOutlet UISwitch* official;
     IBOutlet UISwitch* nautical;
     IBOutlet UISwitch* astro;
-    MainViewController* _myInterface;
+    MainViewController *_myInterface;
 }
 
-@property (retain, nonatomic) MainViewController* myInterface;
+@property (retain, nonatomic) MainViewController *myInterface;
 @property (retain, nonatomic) IBOutlet UISwitch* civil;
 @property (retain, nonatomic) IBOutlet UISwitch* official;
 @property (retain, nonatomic) IBOutlet UISwitch* nautical;
