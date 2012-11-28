@@ -19,7 +19,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Moon-Phase-Full-icon.png" id="sAG-Jd-OvO">
-                                <rect key="frame" x="31" y="276" width="147" height="128"/>
+                                <rect key="frame" x="87" y="289" width="147" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wbh-i7-c1V">
@@ -169,7 +169,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.79372608418367352" green="0.7928206943972167" blue="0.0016416275778455836" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="toggleEnabledForCivil:" destination="Ukz-Ww-CoC" eventType="valueChanged" id="9rE-Qn-Kuy"/>
+                                    <action selector="toggleEnabledForCivil:" destination="Ukz-Ww-CoC" eventType="valueChanged" id="xKZ-9y-Oka"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Official" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="LFQ-Cr-ouB">
@@ -264,7 +264,7 @@
                     <navigationItem key="navigationItem" id="KpL-fj-7LJ"/>
                     <connections>
                         <outlet property="astro" destination="v78-dw-wWr" id="AUv-lH-NCi"/>
-                        <outlet property="civil" destination="fId-ls-nqB" id="oUw-xt-8Pu"/>
+                        <outlet property="civil" destination="fId-ls-nqB" id="rpM-3Z-GJ2"/>
                         <outlet property="nautical" destination="XoV-GW-AdF" id="3bi-pK-kxp"/>
                         <outlet property="official" destination="xiJ-tg-H80" id="63W-dE-OG2"/>
                     </connections>

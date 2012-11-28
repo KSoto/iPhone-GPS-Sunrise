@@ -28,46 +28,48 @@
 @synthesize nautical;
 @synthesize astro;
 
+@synthesize userDefaults = _userDefaults;
+
+//********PROBLEM: INIT WITH NIB IS NOT EVER RUNNING*******************
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) 
+    {
+        // Custom initialization
+        self.userDefaults = [NSUserDefaults standardUserDefaults];
+        
+        //each setting (civil, nautical, etc.) defaults to TRUE,
+        //so it's ON by DEFAULT
+        self.civil = TRUE;
+        self.official = TRUE;
+        self.nautical = TRUE;
+        self.astro = TRUE;
+        NSLog(@"HELLO");
+    }
+    return self;
+}
+
+//*********************************************************************
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    //each setting (civil, nautical, etc.) defaults to TRUE,
-    //so it's ON by DEFAULT
-    if((self.official == NULL)||(self.civil == nil))
-    {
-        self.civil = TRUE;
-    }
-    if((self.official == NULL)||(self.official == nil))
-    {
-        self.official = TRUE;
-    }
-    if((self.nautical == NULL)||(self.nautical == nil))
-    {
-        self.nautical = TRUE;
-    }
-    if((self.astro == NULL)||(self.astro == nil))
-    {
-        self.astro = TRUE;
-    }
-     
+//*******GET SAVED USER DATA************
+    NSLog(@"\n self.civil = %@", self.civil);
+    self.civil = [self.userDefaults boolForKey:@"civilBool"];
+    NSLog(@"\n self.civil = %@", self.civil);
+
 //*******TESTING PURPOSES ONLY**********    
     if(self.civil==TRUE)
     {
         NSLog(@"\nMAIN: self.civil set to true");
-    }else if(self.civil!=TRUE)
+    }else if(self.civil==FALSE)
     {
         NSLog(@"\nMAIN: self.civil set to false");
     }
     
-    if(civil==TRUE)
-    {
-        NSLog(@"\nMAIN: civil set to true");
-    }else if(civil!=TRUE)
-    {
-        NSLog(@"\nMAIN: civil set to false");
-    }
-
+//////////////////////////////////////////////////DONE FROM HERE DOWN/////////////////////////////////////////////////
     
 //***GETS THE CITY NAME SET BY THE USER****    
     NSLog(@"\nLocation set to: %@", self.cityObject.name);
@@ -86,11 +88,9 @@
         lon = -117.92444;
     }else{
         //location has been previously set by the user
-//**TODO: THIS IS BROKEN, CURRENTLY USING DEFAULT VALUES**
-        //lat = self.cityObject.coord->latitude;
-        //lon = self.cityObject.coord->longitude;
-        lat = 33.87028;
-        lon = -117.92444;
+        //"lat" and "long" are switched, sorry for the confusion
+        lat = self.cityObject.coord->longitude;
+        lon = self.cityObject.coord->latitude;
     }
 
     time( &now );
@@ -153,12 +153,14 @@
     }
 }
 
+//***********************************************
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
 
+//***********************************************
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);

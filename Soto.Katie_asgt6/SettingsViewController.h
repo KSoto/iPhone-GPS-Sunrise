@@ -24,6 +24,7 @@
 @property (retain, nonatomic) IBOutlet UISwitch* nautical;
 @property (retain, nonatomic) IBOutlet UISwitch* astro;
 
+
 - (IBAction) toggleEnabledForCivil: (id) sender;  
 - (IBAction) toggleEnabledForOfficial: (id) sender;  
 - (IBAction) toggleEnabledForNautical: (id) sender; 

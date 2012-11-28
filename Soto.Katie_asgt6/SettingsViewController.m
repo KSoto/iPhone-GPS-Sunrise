@@ -28,14 +28,14 @@
     return _myInterface;
 }
 
+//***********************************************
 - (void)viewDidLoad
 {
-    //each setting (civil, nautical, etc.) defaults to TRUE,
-    //so it's ON by DEFAULT
-    if((self.myInterface.civil == NULL)||(self.myInterface.civil == nil))
-    {
-        self.civil.on = TRUE;
-    }else if(self.myInterface.civil == FALSE)
+    [super viewDidLoad];
+    
+    //if the setting (from "MainViewController") is set to FALSE, 
+    //then set the switch to be FALSE to match
+    if(self.myInterface.civil == FALSE)
     {
         self.civil.on = FALSE;
     }else if(self.myInterface.civil == TRUE)
@@ -46,17 +46,32 @@
     //TODO add the rest
 }
 
+//***********************************************
 - (IBAction) toggleEnabledForCivil: (id) sender
 {
-    if (civil.on)
+    if (civil.on==TRUE)
     {
+        //tell MainViewController that the user has selected it to be TRUE
         self.myInterface.civil = TRUE;
-    }else if(!civil.on)
+        
+        //set/save the UserDefaults
+        [self.myInterface.userDefaults setBool:TRUE forKey:@"civilBool"];
+        [self.myInterface.userDefaults synchronize];
+        
+    }else if(civil.on==FALSE)
     {
+        //tell MainViewController that the user has selected it to be FALSE
         self.myInterface.civil = FALSE;
+        
+        //set/save the UserDefaults
+        [self.myInterface.userDefaults setBool:FALSE forKey:@"civilBool"];
+        [self.myInterface.userDefaults synchronize];
+        
     }
 }
 
+///////////////////////////////////////////////////////////////////////////////////////
+//TODO finish the rest
 - (IBAction) toggleEnabledForOfficial: (id) sender
 {
     if (official.on)
