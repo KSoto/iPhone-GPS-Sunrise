@@ -28,24 +28,18 @@
 @synthesize nautical;
 @synthesize astro;
 
-@synthesize userDefaults = _userDefaults;
 
-//********PROBLEM: INIT WITH NIB IS NOT EVER RUNNING*******************
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) 
     {
-        // Custom initialization
-        self.userDefaults = [NSUserDefaults standardUserDefaults];
-        
         //each setting (civil, nautical, etc.) defaults to TRUE,
         //so it's ON by DEFAULT
         self.civil = TRUE;
         self.official = TRUE;
         self.nautical = TRUE;
         self.astro = TRUE;
-        NSLog(@"HELLO");
     }
     return self;
 }
@@ -55,42 +49,40 @@
 {
     [super viewDidLoad];
     
-//*******GET SAVED USER DATA************
-    NSLog(@"\n self.civil = %@", self.civil);
-    self.civil = [self.userDefaults boolForKey:@"civilBool"];
-    NSLog(@"\n self.civil = %@", self.civil);
-
-//*******TESTING PURPOSES ONLY**********    
-    if(self.civil==TRUE)
-    {
-        NSLog(@"\nMAIN: self.civil set to true");
-    }else if(self.civil==FALSE)
-    {
-        NSLog(@"\nMAIN: self.civil set to false");
-    }
+    // create a standardUserDefaults variable
+    self.standardUserDefaults = [NSUserDefaults standardUserDefaults];
     
-//////////////////////////////////////////////////DONE FROM HERE DOWN/////////////////////////////////////////////////
-    
-//***GETS THE CITY NAME SET BY THE USER****    
-    NSLog(@"\nLocation set to: %@", self.cityObject.name);
+//*******GET SAVED USER PREFERENCES************
+    self.civil = [self.standardUserDefaults boolForKey:@"civilBool"];
+    self.official = [self.standardUserDefaults boolForKey:@"officialBool"];
+    self.nautical = [self.standardUserDefaults boolForKey:@"nauticalBool"];
+    self.astro = [self.standardUserDefaults boolForKey:@"astroBool"];
     
 //Get current time    
     time_t now;
     struct tm* timeinfo;
     
+//***GETS THE CITY NAME SET BY THE USER****
+    NSString *cityName = [self.standardUserDefaults stringForKey:@"cityName"];
+    
 //***GETS THE LAT AND LOG FROM THE SELECTED CITY***
     double lat;
     double lon;
-    if(self.cityObject.name==NULL)
+    
+    if(cityName==NULL)
     {
+        NSLog(@"\nLocation has not been set. Please click settings to set your location");
         //location has NOT been set by the user, using default values...
         lat = 33.87028;
         lon = -117.92444;
     }else{
+        NSLog(@"\nLocation set to: %@", cityName);
         //location has been previously set by the user
         //"lat" and "long" are switched, sorry for the confusion
-        lat = self.cityObject.coord->longitude;
-        lon = self.cityObject.coord->latitude;
+        lat = [self.standardUserDefaults doubleForKey:@"cityLon"];
+        NSLog(@"\nLat is: %f", lat);
+        lon = [self.standardUserDefaults doubleForKey:@"cityLat"];
+        NSLog(@"\nLong is: %f", lon);
     }
 
     time( &now );
@@ -98,6 +90,7 @@
 
     //printf ( "\nCurrent local time and date: %s", asctime(timeinfo) );
     
+//*******PRINT SUNRISE & SUNSET TIMES****************
     //if civil is enabled...
     if(self.civil==TRUE)
     {

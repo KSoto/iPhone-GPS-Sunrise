@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MainViewController.h"
 
 @interface SettingsViewController : UIViewController
 {
@@ -15,10 +14,11 @@
     IBOutlet UISwitch* official;
     IBOutlet UISwitch* nautical;
     IBOutlet UISwitch* astro;
-    MainViewController *_myInterface;
+    
+    //http://codeexamples.wordpress.com/2011/02/12/nsuserdefaults-example/
+    NSUserDefaults * standardUserDefaults;
 }
 
-@property (retain, nonatomic) MainViewController *myInterface;
 @property (retain, nonatomic) IBOutlet UISwitch* civil;
 @property (retain, nonatomic) IBOutlet UISwitch* official;
 @property (retain, nonatomic) IBOutlet UISwitch* nautical;
@@ -28,6 +28,8 @@
 - (IBAction) toggleEnabledForCivil: (id) sender;  
 - (IBAction) toggleEnabledForOfficial: (id) sender;  
 - (IBAction) toggleEnabledForNautical: (id) sender; 
-- (IBAction) toggleEnabledForAstro: (id) sender; 
+- (IBAction) toggleEnabledForAstro: (id) sender;
+
+@property (retain, nonatomic) NSUserDefaults * standardUserDefaults;
 
 @end

@@ -31,11 +31,11 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.standardUserDefaults = [NSUserDefaults standardUserDefaults];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // Uncomment the following line to preserve selection between presentations.
+     //self.clearsSelectionOnViewWillAppear = NO;
+    
     self.regionString = self.selectedRegion.name;
     self.cities = [[USLocationsDatabase database] allLocationsInRegion:self.regionString];
 }
@@ -47,32 +47,25 @@
     self.cities = nil;
 }
 
-#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    //#warning Potentially incomplete method implementation.
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    //#warning Incomplete method implementation.
-    // Return the number of rows in the section.
     return [self.cities count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //static NSString *CellIdentifier = @"Cell";
+
     static NSString *MyIdentifier = @"MyIdentifier";
-    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier forIndexPath:indexPath];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     
     // Configure the cell...
     if (cell == nil) {
-		// Use the default cell style.
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier];
     }
     
@@ -92,6 +85,17 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         MainViewController *destViewController = segue.destinationViewController;
         destViewController.cityObject = [self.cities objectAtIndex: indexPath.row];
+        
+        // saving an NSString
+        [self.standardUserDefaults setObject:destViewController.cityObject.name forKey:@"cityName"];
+        
+        // saving a double
+        [self.standardUserDefaults setDouble:destViewController.cityObject.coord->latitude forKey:@"cityLat"];
+        
+        [self.standardUserDefaults setDouble:destViewController.cityObject.coord->longitude forKey:@"cityLon"];
+        
+        // synchronize the settings
+        [self.standardUserDefaults synchronize];
     }
 }
 

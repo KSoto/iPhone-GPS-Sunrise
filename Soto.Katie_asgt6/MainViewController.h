@@ -32,8 +32,8 @@
     BOOL nautical;
     BOOL astro;
     
-    //http://mobile.tutsplus.com/tutorials/iphone/nsuserdefaults_iphone-sdk/
-    NSUserDefaults *_userDefaults;
+    //http://codeexamples.wordpress.com/2011/02/12/nsuserdefaults-example/
+    NSUserDefaults *standardUserDefaults;
 
 }
 
@@ -53,6 +53,6 @@
 @property (assign) BOOL nautical;
 @property (assign) BOOL astro;
 
-@property (retain, nonatomic) NSUserDefaults *userDefaults;
+@property (retain, nonatomic) NSUserDefaults *standardUserDefaults;
 
 @end

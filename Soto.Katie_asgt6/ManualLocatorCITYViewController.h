@@ -18,11 +18,15 @@
     IBOutlet UITableView *tableView;
     Location* _selectedRegion;
     NSString* _regionString;
+    
+    //http://codeexamples.wordpress.com/2011/02/12/nsuserdefaults-example/
+    NSUserDefaults * standardUserDefaults;
 }
 
 @property (nonatomic, retain) NSArray* cities;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 @property (nonatomic, retain) Location* selectedRegion;
 @property (nonatomic, retain) NSString* regionString;
+@property (nonatomic, retain) NSUserDefaults * standardUserDefaults;
 
 @end
