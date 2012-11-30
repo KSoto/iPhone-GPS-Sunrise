@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -15,7 +15,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Sunrise-icon.png" id="SxD-jl-wLd">
-                                <rect key="frame" x="87" y="100" width="147" height="146"/>
+                                <rect key="frame" x="14" y="28" width="147" height="146"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sunset_icon.png" id="GjG-ff-Sc7">
+                                <rect key="frame" x="160" y="28" width="147" height="146"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Moon-Phase-Full-icon.png" id="sAG-Jd-OvO">
@@ -37,73 +41,93 @@
                                     <segue destination="Ukz-Ww-CoC" kind="modal" modalTransitionStyle="flipHorizontal" id="Rvl-XI-xRp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pji-lB-uIt">
-                                <rect key="frame" x="7" y="91" width="105" height="30"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Civil Sunrise" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pji-lB-uIt">
+                                <rect key="frame" x="30" y="114" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="bV0-Fg-9NU">
-                                <rect key="frame" x="7" y="117" width="105" height="30"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Official Sunrise" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="bV0-Fg-9NU">
+                                <rect key="frame" x="30" y="153" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1Ft-LN-Ikz">
-                                <rect key="frame" x="7" y="141" width="105" height="30"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nautical Sunrise" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1Ft-LN-Ikz">
+                                <rect key="frame" x="30" y="188" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="C0k-uE-IVf">
-                                <rect key="frame" x="7" y="167" width="105" height="30"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Astronomical Sunrise" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="C0k-uE-IVf">
+                                <rect key="frame" x="30" y="223" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="t1b-9T-iQ3">
-                                <rect key="frame" x="207" y="91" width="105" height="30"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Civil Sunset" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="t1b-9T-iQ3">
+                                <rect key="frame" x="186" y="114" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="74g-qh-CF2">
-                                <rect key="frame" x="207" y="117" width="105" height="30"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Official Sunset" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="74g-qh-CF2">
+                                <rect key="frame" x="186" y="152" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2B4-Sp-7Bf">
-                                <rect key="frame" x="207" y="141" width="105" height="30"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nautical Sunset" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2B4-Sp-7Bf">
+                                <rect key="frame" x="186" y="188" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aJI-Xq-ST4">
-                                <rect key="frame" x="207" y="167" width="105" height="30"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Astronomical Sunset" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aJI-Xq-ST4">
+                                <rect key="frame" x="186" y="223" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="balance_30.png" id="lQL-0i-qcm">
+                                <rect key="frame" x="143" y="112" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="checkmark_30.png" id="dFi-oj-XQ4">
+                                <rect key="frame" x="143" y="153" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="ship_30.png" id="tPM-U6-fuL">
+                                <rect key="frame" x="143" y="188" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="star_30.png" id="MCl-1w-iMa">
+                                <rect key="frame" x="143" y="223" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="oWH-7e-NW0"/>
                     <connections>
+                        <outlet property="_astroIcon" destination="MCl-1w-iMa" id="NqQ-3f-i7b"/>
                         <outlet property="_astroSunriseLabel" destination="C0k-uE-IVf" id="L3j-yq-TP5"/>
                         <outlet property="_astroSunsetLabel" destination="aJI-Xq-ST4" id="ZWT-bu-E9q"/>
+                        <outlet property="_civilIcon" destination="lQL-0i-qcm" id="1jR-tr-jDe"/>
                         <outlet property="_civilSunriseLabel" destination="pji-lB-uIt" id="kE1-j2-m41"/>
                         <outlet property="_civilSunsetLabel" destination="t1b-9T-iQ3" id="bAG-AN-bIl"/>
+                        <outlet property="_nauticalIcon" destination="tPM-U6-fuL" id="Ab5-z5-52q"/>
                         <outlet property="_nauticalSunriseLabel" destination="1Ft-LN-Ikz" id="WkK-H1-Hel"/>
                         <outlet property="_nauticalSunsetLabel" destination="2B4-Sp-7Bf" id="1fL-nb-1Bu"/>
+                        <outlet property="_officialIcon" destination="dFi-oj-XQ4" id="m5M-yB-bPl"/>
                         <outlet property="_officialSunriseLabel" destination="bV0-Fg-9NU" id="nEm-M2-eQI"/>
                         <outlet property="_officialSunsetLabel" destination="74g-qh-CF2" id="dag-Nh-3gI"/>
                     </connections>
@@ -242,12 +266,15 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vtJ-mc-K58" kind="modal" id="2GU-fw-gJN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O9A-U1-xlc">
                                 <rect key="frame" x="8" y="9" width="35" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="go_previous_black.png">
+                                <state key="normal" backgroundImage="rewind_30.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -272,6 +299,81 @@
             </objects>
             <point key="canvasLocation" x="420" y="182"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Lda-Ui-caV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1S-OT-wnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="vtJ-mc-K58" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jq2-js-LYD">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Civil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2lo-Kk-h5d">
+                                <rect key="frame" x="20" y="10" width="200" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Official" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="PN0-lo-dLl">
+                                <rect key="frame" x="20" y="112" width="200" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nautical" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9aN-zA-G7H">
+                                <rect key="frame" x="20" y="227" width="200" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Astronomical" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lWW-za-h92">
+                                <rect key="frame" x="20" y="341" width="200" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mYE-PV-AkD">
+                                <rect key="frame" x="288" y="10" width="24" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="cross_30.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ukz-Ww-CoC" kind="modal" id="LiG-4b-eLL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="balance_30.png" id="16D-ua-9q6">
+                                <rect key="frame" x="67" y="10" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="checkmark_30.png" id="18C-5I-Jjj">
+                                <rect key="frame" x="95" y="118" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star_30.png" id="HIh-2l-Xzi">
+                                <rect key="frame" x="152" y="347" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ship_30.png" id="toj-ee-n7d">
+                                <rect key="frame" x="108" y="233" width="35" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="420" y="-420"/>
+        </scene>
         <!--Locator View Controller-->
         <scene sceneID="B2D-5S-Acw">
             <objects>
@@ -285,7 +387,7 @@
                                 <rect key="frame" x="10" y="7" width="35" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="go_previous_black.png">
+                                <state key="normal" backgroundImage="rewind_30.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -332,7 +434,7 @@
                                 <rect key="frame" x="11" y="7" width="35" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="go_previous_black.png">
+                                <state key="normal" backgroundImage="rewind_30.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -413,7 +515,7 @@
                                 <rect key="frame" x="11" y="7" width="35" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="go_previous_black.png">
+                                <state key="normal" backgroundImage="rewind_30.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -493,8 +595,14 @@
         <image name="HouseBlack.png" width="512" height="512"/>
         <image name="Moon-Phase-Full-icon.png" width="256" height="256"/>
         <image name="Sunrise-icon.png" width="256" height="256"/>
-        <image name="go_previous_black.png" width="128" height="128"/>
+        <image name="balance_30.png" width="30" height="30"/>
+        <image name="checkmark_30.png" width="30" height="30"/>
+        <image name="cross_30.png" width="30" height="30"/>
         <image name="icon_small_settings1.png" width="552" height="594"/>
+        <image name="rewind_30.png" width="30" height="30"/>
+        <image name="ship_30.png" width="30" height="30"/>
+        <image name="star_30.png" width="30" height="30"/>
+        <image name="sunset_icon.png" width="256" height="256"/>
     </resources>
     <classes>
         <class className="GPSLocatorViewController" superclassName="UIViewController">
@@ -503,20 +611,28 @@
         <class className="MainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="_astroIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="_astroSunriseLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="_astroSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_civilIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="_civilSunriseLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="_civilSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_nauticalIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="_nauticalSunriseLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="_nauticalSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="_officialIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="_officialSunriseLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="_officialSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="astroIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="astroSunriseLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="astroSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="civilIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="civilSunriseLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="civilSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nauticalIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="nauticalSunriseLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="nauticalSunsetLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="officialIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="officialSunriseLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="officialSunsetLabel" candidateClass="UILabel"/>
             </relationships>
@@ -553,8 +669,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Rvl-XI-xRp"/>
-        <segue reference="JfD-cU-FuP"/>
+        <segue reference="3zo-ua-hI4"/>
         <segue reference="2fR-RX-Vaz"/>
+        <segue reference="Rvl-XI-xRp"/>
     </inferredMetricsTieBreakers>
 </document>

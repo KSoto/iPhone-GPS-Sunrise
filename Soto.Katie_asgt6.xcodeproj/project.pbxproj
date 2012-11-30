@@ -12,6 +12,15 @@
 		AC45A19416641A62005783FD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45A19316641A62005783FD /* libsqlite3.dylib */; };
 		AC45A19616641A6C005783FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45A19516641A6C005783FD /* CoreLocation.framework */; };
 		AC45A19916641F12005783FD /* ManualLocatorCITYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A19816641F12005783FD /* ManualLocatorCITYViewController.m */; };
+		CEA8AE2416684E52002253F7 /* cross_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2316684E52002253F7 /* cross_30.png */; };
+		CEA8AE2A16684EDC002253F7 /* rewind_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2716684EDC002253F7 /* rewind_30.png */; };
+		CEA8AE2B16684EDC002253F7 /* ship_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2816684EDC002253F7 /* ship_30.png */; };
+		CEA8AE2C16684EDC002253F7 /* star_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2916684EDC002253F7 /* star_30.png */; };
+		CEA8AE2E16684EE6002253F7 /* moon_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2D16684EE6002253F7 /* moon_30.png */; };
+		CEA8AE3016684EF5002253F7 /* gear_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2F16684EF5002253F7 /* gear_30.png */; };
+		CEA8AE33166851AE002253F7 /* balance_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE31166851AD002253F7 /* balance_30.png */; };
+		CEA8AE34166851AE002253F7 /* checkmark_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE32166851AE002253F7 /* checkmark_30.png */; };
+		CEA8AE3616685349002253F7 /* sunset_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE3516685349002253F7 /* sunset_icon.png */; };
 		CEB817411652FF3F00DBAB71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817401652FF3F00DBAB71 /* UIKit.framework */; };
 		CEB817431652FF3F00DBAB71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
 		CEB817451652FF3F00DBAB71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817441652FF3F00DBAB71 /* CoreGraphics.framework */; };
@@ -58,6 +67,15 @@
 		AC45A19516641A6C005783FD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AC45A19716641F11005783FD /* ManualLocatorCITYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualLocatorCITYViewController.h; sourceTree = "<group>"; };
 		AC45A19816641F12005783FD /* ManualLocatorCITYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualLocatorCITYViewController.m; sourceTree = "<group>"; };
+		CEA8AE2316684E52002253F7 /* cross_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cross_30.png; path = Resources/cross_30.png; sourceTree = "<group>"; };
+		CEA8AE2716684EDC002253F7 /* rewind_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rewind_30.png; path = Resources/rewind_30.png; sourceTree = "<group>"; };
+		CEA8AE2816684EDC002253F7 /* ship_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship_30.png; path = Resources/ship_30.png; sourceTree = "<group>"; };
+		CEA8AE2916684EDC002253F7 /* star_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_30.png; path = Resources/star_30.png; sourceTree = "<group>"; };
+		CEA8AE2D16684EE6002253F7 /* moon_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moon_30.png; path = Resources/moon_30.png; sourceTree = "<group>"; };
+		CEA8AE2F16684EF5002253F7 /* gear_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gear_30.png; path = Resources/gear_30.png; sourceTree = "<group>"; };
+		CEA8AE31166851AD002253F7 /* balance_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = balance_30.png; path = Resources/balance_30.png; sourceTree = "<group>"; };
+		CEA8AE32166851AE002253F7 /* checkmark_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark_30.png; path = Resources/checkmark_30.png; sourceTree = "<group>"; };
+		CEA8AE3516685349002253F7 /* sunset_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sunset_icon.png; path = Resources/sunset_icon.png; sourceTree = "<group>"; };
 		CEB8173C1652FF3F00DBAB71 /* Soto.Katie_asgt6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soto.Katie_asgt6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB817401652FF3F00DBAB71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEB817421652FF3F00DBAB71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -198,6 +216,15 @@
 		CEB817611653005C00DBAB71 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CEA8AE3516685349002253F7 /* sunset_icon.png */,
+				CEA8AE31166851AD002253F7 /* balance_30.png */,
+				CEA8AE32166851AE002253F7 /* checkmark_30.png */,
+				CEA8AE2F16684EF5002253F7 /* gear_30.png */,
+				CEA8AE2D16684EE6002253F7 /* moon_30.png */,
+				CEA8AE2716684EDC002253F7 /* rewind_30.png */,
+				CEA8AE2816684EDC002253F7 /* ship_30.png */,
+				CEA8AE2916684EDC002253F7 /* star_30.png */,
+				CEA8AE2316684E52002253F7 /* cross_30.png */,
 				CEBECE5E1656F94B009877FB /* Moon-Phase-Full-icon.png */,
 				CEBECE6B1657005C009877FB /* go_previous_black.png */,
 				CEBECE7916570429009877FB /* HouseBlack.png */,
@@ -314,6 +341,15 @@
 				CEBECE6A1656FC9A009877FB /* icon_small_settings1.png in Resources */,
 				CEBECE6C1657005C009877FB /* go_previous_black.png in Resources */,
 				CEBECE7B16570429009877FB /* HouseBlack.png in Resources */,
+				CEA8AE2416684E52002253F7 /* cross_30.png in Resources */,
+				CEA8AE2A16684EDC002253F7 /* rewind_30.png in Resources */,
+				CEA8AE2B16684EDC002253F7 /* ship_30.png in Resources */,
+				CEA8AE2C16684EDC002253F7 /* star_30.png in Resources */,
+				CEA8AE2E16684EE6002253F7 /* moon_30.png in Resources */,
+				CEA8AE3016684EF5002253F7 /* gear_30.png in Resources */,
+				CEA8AE33166851AE002253F7 /* balance_30.png in Resources */,
+				CEA8AE34166851AE002253F7 /* checkmark_30.png in Resources */,
+				CEA8AE3616685349002253F7 /* sunset_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,7 @@
 @interface MainViewController : UIViewController
 {
     Location* _cityObject;
+    
     IBOutlet UILabel* _civilSunriseLabel;
     IBOutlet UILabel* _officialSunriseLabel;
     IBOutlet UILabel* _nauticalSunriseLabel;
@@ -26,6 +27,11 @@
     IBOutlet UILabel* _officialSunsetLabel;
     IBOutlet UILabel* _nauticalSunsetLabel;
     IBOutlet UILabel* _astroSunsetLabel;
+    
+    IBOutlet UIImageView* _civilIcon;
+    IBOutlet UIImageView* _officialIcon;
+    IBOutlet UIImageView* _nauticalIcon;
+    IBOutlet UIImageView* _astroIcon;
     
     BOOL civil;
     BOOL official;
@@ -38,6 +44,7 @@
 }
 
 @property (nonatomic, retain) Location* cityObject;
+
 @property (retain, nonatomic) IBOutlet UILabel* civilSunriseLabel;
 @property (retain, nonatomic) IBOutlet UILabel* officialSunriseLabel;
 @property (retain, nonatomic) IBOutlet UILabel* nauticalSunriseLabel;
@@ -47,6 +54,11 @@
 @property (retain, nonatomic) IBOutlet UILabel* officialSunsetLabel;
 @property (retain, nonatomic) IBOutlet UILabel* nauticalSunsetLabel;
 @property (retain, nonatomic) IBOutlet UILabel* astroSunsetLabel;
+
+@property (retain, nonatomic) IBOutlet UIImageView* civilIcon;
+@property (retain, nonatomic) IBOutlet UIImageView* officialIcon;
+@property (retain, nonatomic) IBOutlet UIImageView* nauticalIcon;
+@property (retain, nonatomic) IBOutlet UIImageView* astroIcon;
 
 @property (assign) BOOL civil;
 @property (assign) BOOL official;

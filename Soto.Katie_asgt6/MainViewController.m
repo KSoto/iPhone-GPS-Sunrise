@@ -13,6 +13,7 @@
 @implementation MainViewController
 
 @synthesize cityObject = _cityObject;
+
 @synthesize civilSunriseLabel = _civilSunriseLabel;
 @synthesize officialSunriseLabel = _officialSunriseLabel;
 @synthesize nauticalSunriseLabel = _nauticalSunriseLabel;
@@ -22,6 +23,11 @@
 @synthesize officialSunsetLabel = _officialSunsetLabel;
 @synthesize nauticalSunsetLabel = _nauticalSunsetLabel;
 @synthesize astroSunsetLabel = _astroSunsetLabel;
+
+@synthesize civilIcon = _civilIcon;
+@synthesize officialIcon = _officialIcon;
+@synthesize nauticalIcon = _nauticalIcon;
+@synthesize astroIcon = _astroIcon;
 
 @synthesize civil;
 @synthesize official;
@@ -94,6 +100,10 @@
     //if civil is enabled...
     if(self.civil==TRUE)
     {
+        self.civilIcon.hidden = FALSE;
+        self.civilSunriseLabel.hidden = FALSE;
+        self.civilSunsetLabel.hidden = FALSE;
+        
         double sunrise = calculateSunriseOrSunset( timeinfo, lat, lon, CIVIL, YES );
         double sunrise_h = floor(sunrise) - ( sunrise > 12.0 ? 12.0 : 0.0);
         double sunrise_m = round((sunrise - floor(sunrise)) * 60.0 );
@@ -104,9 +114,18 @@
     
         self.civilSunriseLabel.text = [NSString stringWithFormat:@"Sunrise: %g:%02g AM", sunrise_h, sunrise_m ];
         self.civilSunsetLabel.text = [NSString stringWithFormat:@"Sunset: %g:%02g PM", sunset_h, sunset_m ];
+    }else{
+        self.civilIcon.hidden = TRUE;
+        self.civilSunriseLabel.hidden = TRUE;
+        self.civilSunsetLabel.hidden = TRUE;
     }
+    
     if(self.official==TRUE)
     {
+        self.officialIcon.hidden = FALSE;
+        self.officialSunriseLabel.hidden = FALSE;
+        self.officialSunsetLabel.hidden = FALSE;
+        
         double sunrise = calculateSunriseOrSunset( timeinfo, lat, lon, OFFICIAL, YES );
         double sunrise_h = floor(sunrise) - ( sunrise > 12.0 ? 12.0 : 0.0);
         double sunrise_m = round((sunrise - floor(sunrise)) * 60.0 );
@@ -117,9 +136,18 @@
         
         self.officialSunriseLabel.text = [NSString stringWithFormat:@"Sunrise: %g:%02g AM", sunrise_h, sunrise_m ];
         self.officialSunsetLabel.text = [NSString stringWithFormat:@"Sunset: %g:%02g PM", sunset_h, sunset_m ];
+    }else{
+        self.officialIcon.hidden = TRUE;
+        self.officialSunriseLabel.hidden = TRUE;
+        self.officialSunsetLabel.hidden = TRUE;
     }
+    
     if(self.nautical==TRUE)
     {
+        self.nauticalIcon.hidden = FALSE;
+        self.nauticalSunriseLabel.hidden = FALSE;
+        self.nauticalSunsetLabel.hidden = FALSE;
+        
         double sunrise = calculateSunriseOrSunset( timeinfo, lat, lon, NAUTICAL, YES );
         double sunrise_h = floor(sunrise) - ( sunrise > 12.0 ? 12.0 : 0.0);
         double sunrise_m = round((sunrise - floor(sunrise)) * 60.0 );
@@ -130,9 +158,18 @@
         
         self.nauticalSunriseLabel.text = [NSString stringWithFormat:@"Sunrise: %g:%02g AM", sunrise_h, sunrise_m ];
         self.nauticalSunsetLabel.text = [NSString stringWithFormat:@"Sunset: %g:%02g PM", sunset_h, sunset_m ];
+    }else{
+        self.nauticalIcon.hidden = TRUE;
+        self.nauticalSunriseLabel.hidden = TRUE;
+        self.nauticalSunsetLabel.hidden = TRUE;
     }
+    
     if(self.astro==TRUE)
     {
+        self.astroIcon.hidden = FALSE;
+        self.astroSunriseLabel.hidden = FALSE;
+        self.astroSunsetLabel.hidden = FALSE;
+        
         double sunrise = calculateSunriseOrSunset( timeinfo, lat, lon, ASTRONOMICAL, YES );
         double sunrise_h = floor(sunrise) - ( sunrise > 12.0 ? 12.0 : 0.0);
         double sunrise_m = round((sunrise - floor(sunrise)) * 60.0 );
@@ -141,9 +178,15 @@
         double sunset_h = floor(sunset) - ( sunset > 12.0 ? 12.0 : 0.0);
         double sunset_m = round((sunset - floor(sunset)) * 60.0 );
         
+        
         self.astroSunriseLabel.text = [NSString stringWithFormat:@"Sunrise: %g:%02g AM", sunrise_h, sunrise_m ];
         self.astroSunsetLabel.text = [NSString stringWithFormat:@"Sunset: %g:%02g PM", sunset_h, sunset_m ];
+    }else{
+        self.astroIcon.hidden = TRUE;
+        self.astroSunriseLabel.hidden = TRUE;
+        self.astroSunsetLabel.hidden = TRUE;
     }
+    
 }
 
 //***********************************************
