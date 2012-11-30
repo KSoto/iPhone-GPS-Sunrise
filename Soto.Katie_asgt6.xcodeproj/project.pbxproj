@@ -16,8 +16,6 @@
 		CEA8AE2A16684EDC002253F7 /* rewind_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2716684EDC002253F7 /* rewind_30.png */; };
 		CEA8AE2B16684EDC002253F7 /* ship_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2816684EDC002253F7 /* ship_30.png */; };
 		CEA8AE2C16684EDC002253F7 /* star_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2916684EDC002253F7 /* star_30.png */; };
-		CEA8AE2E16684EE6002253F7 /* moon_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2D16684EE6002253F7 /* moon_30.png */; };
-		CEA8AE3016684EF5002253F7 /* gear_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE2F16684EF5002253F7 /* gear_30.png */; };
 		CEA8AE33166851AE002253F7 /* balance_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE31166851AD002253F7 /* balance_30.png */; };
 		CEA8AE34166851AE002253F7 /* checkmark_30.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE32166851AE002253F7 /* checkmark_30.png */; };
 		CEA8AE3616685349002253F7 /* sunset_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA8AE3516685349002253F7 /* sunset_icon.png */; };
@@ -38,7 +36,6 @@
 		CEBECE611656F94B009877FB /* Sunrise-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE5F1656F94B009877FB /* Sunrise-icon.png */; };
 		CEBECE641656FAB5009877FB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBECE631656FAB5009877FB /* MainViewController.m */; };
 		CEBECE6A1656FC9A009877FB /* icon_small_settings1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE691656FC9A009877FB /* icon_small_settings1.png */; };
-		CEBECE6C1657005C009877FB /* go_previous_black.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE6B1657005C009877FB /* go_previous_black.png */; };
 		CEBECE6F16570152009877FB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBECE6E16570152009877FB /* SettingsViewController.m */; };
 		CEBECE721657031D009877FB /* GPSLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBECE711657031D009877FB /* GPSLocatorViewController.m */; };
 		CEBECE7516570338009877FB /* ManualLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBECE7416570338009877FB /* ManualLocatorViewController.m */; };
@@ -71,8 +68,6 @@
 		CEA8AE2716684EDC002253F7 /* rewind_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rewind_30.png; path = Resources/rewind_30.png; sourceTree = "<group>"; };
 		CEA8AE2816684EDC002253F7 /* ship_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship_30.png; path = Resources/ship_30.png; sourceTree = "<group>"; };
 		CEA8AE2916684EDC002253F7 /* star_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_30.png; path = Resources/star_30.png; sourceTree = "<group>"; };
-		CEA8AE2D16684EE6002253F7 /* moon_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moon_30.png; path = Resources/moon_30.png; sourceTree = "<group>"; };
-		CEA8AE2F16684EF5002253F7 /* gear_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gear_30.png; path = Resources/gear_30.png; sourceTree = "<group>"; };
 		CEA8AE31166851AD002253F7 /* balance_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = balance_30.png; path = Resources/balance_30.png; sourceTree = "<group>"; };
 		CEA8AE32166851AE002253F7 /* checkmark_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkmark_30.png; path = Resources/checkmark_30.png; sourceTree = "<group>"; };
 		CEA8AE3516685349002253F7 /* sunset_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sunset_icon.png; path = Resources/sunset_icon.png; sourceTree = "<group>"; };
@@ -100,7 +95,6 @@
 		CEBECE621656FAB5009877FB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		CEBECE631656FAB5009877FB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		CEBECE691656FC9A009877FB /* icon_small_settings1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_small_settings1.png; path = Resources/icon_small_settings1.png; sourceTree = "<group>"; };
-		CEBECE6B1657005C009877FB /* go_previous_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = go_previous_black.png; path = Resources/go_previous_black.png; sourceTree = "<group>"; };
 		CEBECE6D16570152009877FB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		CEBECE6E16570152009877FB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		CEBECE701657031D009877FB /* GPSLocatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSLocatorViewController.h; sourceTree = "<group>"; };
@@ -219,14 +213,11 @@
 				CEA8AE3516685349002253F7 /* sunset_icon.png */,
 				CEA8AE31166851AD002253F7 /* balance_30.png */,
 				CEA8AE32166851AE002253F7 /* checkmark_30.png */,
-				CEA8AE2F16684EF5002253F7 /* gear_30.png */,
-				CEA8AE2D16684EE6002253F7 /* moon_30.png */,
 				CEA8AE2716684EDC002253F7 /* rewind_30.png */,
 				CEA8AE2816684EDC002253F7 /* ship_30.png */,
 				CEA8AE2916684EDC002253F7 /* star_30.png */,
 				CEA8AE2316684E52002253F7 /* cross_30.png */,
 				CEBECE5E1656F94B009877FB /* Moon-Phase-Full-icon.png */,
-				CEBECE6B1657005C009877FB /* go_previous_black.png */,
 				CEBECE7916570429009877FB /* HouseBlack.png */,
 				CEBECE691656FC9A009877FB /* icon_small_settings1.png */,
 				CEBECE5F1656F94B009877FB /* Sunrise-icon.png */,
@@ -339,14 +330,11 @@
 				CEBECE601656F94B009877FB /* Moon-Phase-Full-icon.png in Resources */,
 				CEBECE611656F94B009877FB /* Sunrise-icon.png in Resources */,
 				CEBECE6A1656FC9A009877FB /* icon_small_settings1.png in Resources */,
-				CEBECE6C1657005C009877FB /* go_previous_black.png in Resources */,
 				CEBECE7B16570429009877FB /* HouseBlack.png in Resources */,
 				CEA8AE2416684E52002253F7 /* cross_30.png in Resources */,
 				CEA8AE2A16684EDC002253F7 /* rewind_30.png in Resources */,
 				CEA8AE2B16684EDC002253F7 /* ship_30.png in Resources */,
 				CEA8AE2C16684EDC002253F7 /* star_30.png in Resources */,
-				CEA8AE2E16684EE6002253F7 /* moon_30.png in Resources */,
-				CEA8AE3016684EF5002253F7 /* gear_30.png in Resources */,
 				CEA8AE33166851AE002253F7 /* balance_30.png in Resources */,
 				CEA8AE34166851AE002253F7 /* checkmark_30.png in Resources */,
 				CEA8AE3616685349002253F7 /* sunset_icon.png in Resources */,

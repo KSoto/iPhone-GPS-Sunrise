@@ -162,7 +162,7 @@
                                 <rect key="frame" x="26" y="104" width="268" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                                <state key="normal" title="Get Location With GPS">
+                                <state key="normal" title="GPS (Currently Disabled)">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -669,8 +669,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3zo-ua-hI4"/>
-        <segue reference="2fR-RX-Vaz"/>
+        <segue reference="JfD-cU-FuP"/>
         <segue reference="Rvl-XI-xRp"/>
+        <segue reference="2fR-RX-Vaz"/>
     </inferredMetricsTieBreakers>
 </document>
