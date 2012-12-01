@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Katie Soto. All rights reserved.
 //
 
-//*****NOTE TO SELF: USE NSUSERDEFAULTS TO SET USER PREFERENCES EVEN AFTER YOU CLOSE THE APP********//
-
 #import "MainViewController.h"
 
 @implementation MainViewController

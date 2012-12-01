@@ -11,9 +11,6 @@
 #import "Sunrise.h" //doesn't have anything in it, but I want to include it anyway...
 #import "Location.h"
 
-//*****CURRENT PROBLEM: the booleans in the setting view controller are being saved, but
-//when I open MainViewController, they get reinitialized back to nothing.
-
 @interface MainViewController : UIViewController
 {
     Location* _cityObject;

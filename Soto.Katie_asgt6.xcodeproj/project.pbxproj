@@ -132,8 +132,6 @@
 		CEB817311652FF3E00DBAB71 = {
 			isa = PBXGroup;
 			children = (
-				AC45A19516641A6C005783FD /* CoreLocation.framework */,
-				AC45A19316641A62005783FD /* libsqlite3.dylib */,
 				CEB817461652FF3F00DBAB71 /* Soto.Katie_asgt6 */,
 				CEB817601653002F00DBAB71 /* Libraries */,
 				CEB817611653005C00DBAB71 /* Resources */,
@@ -154,6 +152,8 @@
 		CEB8173F1652FF3F00DBAB71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC45A19516641A6C005783FD /* CoreLocation.framework */,
+				AC45A19316641A62005783FD /* libsqlite3.dylib */,
 				CEB8177C1653042E00DBAB71 /* Foundation.framework */,
 				CEB817401652FF3F00DBAB71 /* UIKit.framework */,
 				CEB817421652FF3F00DBAB71 /* Foundation.framework */,
