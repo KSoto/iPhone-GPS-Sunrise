@@ -21,6 +21,7 @@
 //
 
 #import "GPSLocatorViewController.h"
+#import "MyLocationManager.h"
 
 @interface GPSLocatorViewController ()
 
@@ -41,6 +42,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    
+     if ([CLLocationManager locationServicesEnabled] == NO)
+        {
+         NSLog(@"Location services are not enabled. Exiting.");
+        }
+     MyLocationManager* mlm = [[MyLocationManager alloc] init];
+     [mlm startUpdatingLocation:@"Starting"];
+     
 }
 
 - (void)viewDidUnload

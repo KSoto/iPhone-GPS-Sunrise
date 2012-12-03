@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295A2418166D5924008BE356 /* CLLocation (Strings).m in Sources */ = {isa = PBXBuildFile; fileRef = 295A2417166D5924008BE356 /* CLLocation (Strings).m */; };
+		295A241C166D5A59008BE356 /* MyLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 295A241B166D5A59008BE356 /* MyLocationManager.m */; };
 		AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A18D1664148F005783FD /* USLocationsDatabase.m */; };
 		AC45A1921664174C005783FD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A1911664174C005783FD /* Location.m */; };
 		AC45A19416641A62005783FD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45A19316641A62005783FD /* libsqlite3.dylib */; };
@@ -56,10 +58,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AC45A18C1664148F005783FD /* USLocationsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USLocationsDatabase.h; sourceTree = "<group>"; };
-		AC45A18D1664148F005783FD /* USLocationsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USLocationsDatabase.m; sourceTree = "<group>"; };
-		AC45A1901664174C005783FD /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
-		AC45A1911664174C005783FD /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		295A2416166D5924008BE356 /* CLLocation (Strings).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocation (Strings).h"; path = "Soto.Katie_asgt6/CLLocation (Strings).h"; sourceTree = "<group>"; };
+		295A2417166D5924008BE356 /* CLLocation (Strings).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocation (Strings).m"; path = "Soto.Katie_asgt6/CLLocation (Strings).m"; sourceTree = "<group>"; };
+		295A241A166D5A59008BE356 /* MyLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLocationManager.h; path = Soto.Katie_asgt6/MyLocationManager.h; sourceTree = "<group>"; };
+		295A241B166D5A59008BE356 /* MyLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLocationManager.m; path = Soto.Katie_asgt6/MyLocationManager.m; sourceTree = "<group>"; };
+		AC45A18C1664148F005783FD /* USLocationsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USLocationsDatabase.h; path = Soto.Katie_asgt6/USLocationsDatabase.h; sourceTree = "<group>"; };
+		AC45A18D1664148F005783FD /* USLocationsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USLocationsDatabase.m; path = Soto.Katie_asgt6/USLocationsDatabase.m; sourceTree = "<group>"; };
+		AC45A1901664174C005783FD /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Soto.Katie_asgt6/Location.h; sourceTree = "<group>"; };
+		AC45A1911664174C005783FD /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = Soto.Katie_asgt6/Location.m; sourceTree = "<group>"; };
 		AC45A19316641A62005783FD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		AC45A19516641A6C005783FD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AC45A19716641F11005783FD /* ManualLocatorCITYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualLocatorCITYViewController.h; sourceTree = "<group>"; };
@@ -129,10 +135,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		295A241D166D5C86008BE356 /* GPS Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				295A2416166D5924008BE356 /* CLLocation (Strings).h */,
+				295A2417166D5924008BE356 /* CLLocation (Strings).m */,
+				295A241A166D5A59008BE356 /* MyLocationManager.h */,
+				295A241B166D5A59008BE356 /* MyLocationManager.m */,
+			);
+			name = "GPS Helpers";
+			sourceTree = "<group>";
+		};
+		295A241E166D5C9C008BE356 /* Database Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AC45A1901664174C005783FD /* Location.h */,
+				AC45A1911664174C005783FD /* Location.m */,
+				AC45A18C1664148F005783FD /* USLocationsDatabase.h */,
+				AC45A18D1664148F005783FD /* USLocationsDatabase.m */,
+			);
+			name = "Database Helpers";
+			sourceTree = "<group>";
+		};
 		CEB817311652FF3E00DBAB71 = {
 			isa = PBXGroup;
 			children = (
 				CEB817461652FF3F00DBAB71 /* Soto.Katie_asgt6 */,
+				295A241E166D5C9C008BE356 /* Database Helpers */,
+				295A241D166D5C86008BE356 /* GPS Helpers */,
 				CEB817601653002F00DBAB71 /* Libraries */,
 				CEB817611653005C00DBAB71 /* Resources */,
 				CEB8173F1652FF3F00DBAB71 /* Frameworks */,
@@ -178,10 +208,6 @@
 				CEBECE7416570338009877FB /* ManualLocatorViewController.m */,
 				AC45A19716641F11005783FD /* ManualLocatorCITYViewController.h */,
 				AC45A19816641F12005783FD /* ManualLocatorCITYViewController.m */,
-				AC45A1901664174C005783FD /* Location.h */,
-				AC45A1911664174C005783FD /* Location.m */,
-				AC45A18C1664148F005783FD /* USLocationsDatabase.h */,
-				AC45A18D1664148F005783FD /* USLocationsDatabase.m */,
 				CEB817471652FF3F00DBAB71 /* Supporting Files */,
 			);
 			path = Soto.Katie_asgt6;
@@ -357,6 +383,8 @@
 				AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */,
 				AC45A1921664174C005783FD /* Location.m in Sources */,
 				AC45A19916641F12005783FD /* ManualLocatorCITYViewController.m in Sources */,
+				295A2418166D5924008BE356 /* CLLocation (Strings).m in Sources */,
+				295A241C166D5A59008BE356 /* MyLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
