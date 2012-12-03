@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 Katie Soto. All rights reserved.
 //
 
+//***********FROM http://gamble.ecs.fullerton.edu/teaching/fall12/cs491t/sample-code/corelocation.m/view **************//
+
 #import "CLLocation (Strings).h"
 
 @implementation CLLocation (Strings)

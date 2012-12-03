@@ -446,6 +446,13 @@ dHMgdG8gYmUgY2xlYXJseSBkaXN0aW5ndWlzaGVkA
                                     <segue destination="2" kind="modal" id="ULY-yQ-Bye"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Lvg-51-ZUB">
+                                <rect key="frame" x="20" y="113" width="280" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
@@ -637,65 +644,6 @@ dHMgdG8gYmUgY2xlYXJseSBkaXN0aW5ndWlzaGVkA
         <image name="star_30.png" width="30" height="30"/>
         <image name="sunset_icon.png" width="256" height="256"/>
     </resources>
-    <classes>
-        <class className="GPSLocatorViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GPSLocatorViewController.h"/>
-        </class>
-        <class className="MainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="_astroIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="_astroSunriseLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="_astroSunsetLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="_civilIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="_civilSunriseLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="_civilSunsetLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="_nauticalIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="_nauticalSunriseLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="_nauticalSunsetLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="_officialIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="_officialSunriseLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="_officialSunsetLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="astroIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="astroSunriseLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="astroSunsetLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="civilIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="civilSunriseLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="civilSunsetLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nauticalIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="nauticalSunriseLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nauticalSunsetLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="officialIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="officialSunriseLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="officialSunsetLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ManualLocatorCITYViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ManualLocatorCITYViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ManualLocatorViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ManualLocatorViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="SettingsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="toggleEnabledForAstro:"/>
-                <relationship kind="action" name="toggleEnabledForCivil:"/>
-                <relationship kind="action" name="toggleEnabledForNautical:"/>
-                <relationship kind="action" name="toggleEnabledForOfficial:"/>
-                <relationship kind="outlet" name="astro" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="civil" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="nautical" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="official" candidateClass="UISwitch"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

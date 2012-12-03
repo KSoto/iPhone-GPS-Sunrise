@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 Katie Soto. All rights reserved.
 //
 
+//***********FROM http://gamble.ecs.fullerton.edu/teaching/fall12/cs491t/sample-code/corelocation.m/view **************//
+
 #import "MyLocationManager.h"
 #import "CLLocation (Strings).h"
 
@@ -15,6 +17,8 @@
 @synthesize locationManager = _locationManager;
 @synthesize stateString = _stateString;
 @synthesize bestEffortAtLocation = _bestEffortAtLocation;
+@synthesize gpsCoordinates = _gpsCoordinates;
+
 - (void) locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
     [locationMeasurements addObject:newLocation];
@@ -54,7 +58,14 @@
     self.locationManager.delegate = nil;
     NSLog(@"The state is %@", self.stateString);
     NSLog(@"The coordinates %@", self.bestEffortAtLocation.localizedCoordinateString);
-    //  NSLog(@"The altitude %@", self.bestEffortAtLocation.localizedAltitudeString);
-    //  NSLog(@"The horizontal accuracy string %@", self.bestEffortAtLocation.localizedHorizontalAccuracyString);
+    
+    self.standardUserDefaults = [NSUserDefaults standardUserDefaults];
+    
+    // saving an NSString
+    [self.standardUserDefaults setObject:self.bestEffortAtLocation.localizedCoordinateString forKey:@"localizedCoordinateString"];
+    
+    // synchronize the settings
+    [self.standardUserDefaults synchronize];
+
 }
 @end

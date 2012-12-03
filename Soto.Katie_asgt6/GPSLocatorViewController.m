@@ -29,6 +29,9 @@
 
 @implementation GPSLocatorViewController
 
+@synthesize coordLabel = _coordLabel;
+@synthesize standardUserDefaults = standardUserDefaults;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -43,13 +46,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    
+//***********FROM http://gamble.ecs.fullerton.edu/teaching/fall12/cs491t/sample-code/corelocation.m/view **************//
      if ([CLLocationManager locationServicesEnabled] == NO)
         {
          NSLog(@"Location services are not enabled. Exiting.");
         }
      MyLocationManager* mlm = [[MyLocationManager alloc] init];
      [mlm startUpdatingLocation:@"Starting"];
+    
+    //get saved coordinates from MyLocationManager.m
+    self.standardUserDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *coords = [self.standardUserDefaults stringForKey:@"localizedCoordinateString"];
+    self.coordLabel.text = coords;
      
 }
 

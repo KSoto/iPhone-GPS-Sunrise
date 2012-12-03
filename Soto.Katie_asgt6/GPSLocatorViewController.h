@@ -23,5 +23,14 @@
 #import <UIKit/UIKit.h>
 
 @interface GPSLocatorViewController : UIViewController
+{
+    IBOutlet UILabel* _coordLabel;
+    
+    //http://codeexamples.wordpress.com/2011/02/12/nsuserdefaults-example/
+    NSUserDefaults * standardUserDefaults;
+}
+
+@property (retain, nonatomic) IBOutlet UILabel* coordLabel;
+@property (nonatomic, retain) NSUserDefaults * standardUserDefaults;
 
 @end
