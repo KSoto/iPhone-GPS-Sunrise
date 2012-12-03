@@ -49,7 +49,6 @@
     [self.locationManager startUpdatingLocation];
     [self performSelector:@selector(stopUpdatingLocation:) withObject:@"Timed Out" afterDelay:20.0];
     self.stateString = NSLocalizedString(@"Updating", @"Updating");
-    
 }
 - (void) stopUpdatingLocation:(NSString *)state
 {
