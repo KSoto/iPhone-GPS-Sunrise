@@ -34,7 +34,6 @@
 
 @implementation ManualLocatorCITYViewController
 
-
 @synthesize cities = _cities;
 @synthesize tableView;
 @synthesize selectedRegion = _selectedRegion;
@@ -42,13 +41,14 @@
 @synthesize standardUserDefaults;
 
 //http://developer.apple.com/library/ios/#samplecode/TableViewSuite/Introduction/Intro.html
-//using "Location" for my wrapper
+//*****using "Location" instead of "TimeZoneWrapper"
 //timeZonesArray -> cities
 //timeZonesInSection -> citiesInSection
 //timeZone -> cityName
 //sectionTimeZones -> sectionCityNames
 //timeZonesArrayForSection -> citiesForSection
 //sortedTimeZonesArrayForSection -> sortedCitiesForSection
+
 @synthesize sectionsArray;
 @synthesize collation;
 
@@ -63,6 +63,7 @@
     return _selectedRegion;
 }
 
+//***********************************************
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -73,10 +74,15 @@
     // Uncomment the following line to preserve selection between presentations.
      //self.clearsSelectionOnViewWillAppear = NO;
     
+//****Get the state and fill the cities array with all cities in that state****
+    //GET THE REGION from ManualLocatorViewController
     self.regionString = self.selectedRegion.name;
+    //FILL the cities array with the names of all cities in 
+    //the region (that was retrieved from the last table view)
     self.cities = [[USLocationsDatabase database] allLocationsInRegion:self.regionString];
 }
 
+//***********************************************
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -84,14 +90,16 @@
     self.cities = nil;
 }
 
+//***********************************************
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // The number of time zones in the section is the count of the array associated with the section in the sections array.
+    // The number of cities in the section is the count of the array 
+    //associated with the section in the sections array.
 	NSArray *citiesInSection = [sectionsArray objectAtIndex:section];
-	
     return [citiesInSection count];
 }
 
+//***********************************************
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
@@ -103,15 +111,12 @@
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier];
     }
     
-    // Get the time zone from the array associated with the section index in the sections arra
+    // Get the city from the array associated with the section index in the sections arra
     NSArray *citiesInSection = [sectionsArray objectAtIndex:indexPath.section];
     
-    // Configure the cell with the time zone's name.
+    // Configure the cell with the city's name.
     Location *cityName = [citiesInSection objectAtIndex: indexPath.row];
-    //Location *location = [citiesInSection objectAtIndex: indexPath.row];
-    //locationWrapper *location 
     
-    //cell.textLabel.text = location.name;
     cell.textLabel.text = cityName.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%g, %g)", cityName.region, cityName.coord->longitude, cityName.coord->latitude];
     
@@ -128,15 +133,9 @@
         MainViewController *destViewController = segue.destinationViewController;
         destViewController.cityObject = [self.cities objectAtIndex: indexPath.row];
         
-        // saving an NSString
         [self.standardUserDefaults setObject:destViewController.cityObject.name forKey:@"cityName"];
-        
-        // saving a double
         [self.standardUserDefaults setDouble:destViewController.cityObject.coord->latitude forKey:@"cityLat"];
-        
         [self.standardUserDefaults setDouble:destViewController.cityObject.coord->longitude forKey:@"cityLon"];
-        
-        // synchronize the settings
         [self.standardUserDefaults synchronize];
     }
 }
@@ -180,22 +179,22 @@
 	
 	NSMutableArray *newSectionsArray = [[NSMutableArray alloc] initWithCapacity:sectionTitlesCount];
 	
-	// Set up the sections array: elements are mutable arrays that will contain the time zones for that section.
+	// Set up the sections array: elements are mutable arrays that will contain the cities for that section.
 	for (index = 0; index < sectionTitlesCount; index++) {
 		NSMutableArray *array = [[NSMutableArray alloc] init];
 		[newSectionsArray addObject:array];
 	}
 	
-	// Segregate the time zones into the appropriate arrays.
+	// Segregate the cities into the appropriate arrays.
 	for (Location* cityName in self.cities) {
 		
-		// Ask the collation which section number the time zone belongs in, based on its locale name.
+		// Ask the collation which section number the city belongs in, based on its locale name.
 		NSInteger sectionNumber = [collation sectionForObject:cityName collationStringSelector:@selector(name)];
 		
 		// Get the array for the section.
 		NSMutableArray *sectionCityNames = [newSectionsArray objectAtIndex:sectionNumber];
 		
-		//  Add the time zone to the section.
+		//  Add the city to the section.
 		[sectionCityNames addObject:cityName];
 	}
 	
@@ -214,6 +213,7 @@
 	self.sectionsArray = newSectionsArray;
 }
 
+//**This method IS NEEDED, you just don't need to retain / release because of ARC**
 - (void)setCities:(NSMutableArray *)newDataArray {
 	if (newDataArray != _cities) {
 		//[_cities release];
