@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iOSNova' target in the 'iOSNova' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif

@@ -2,8 +2,8 @@
 -------------------------------KATIE SOTO------------------------------
 ----------------------------Sunrise / Sunset---------------------------
 ---------------------------------------------------------------------*/
-https://github.com/KSoto/iPhone-Sunrise
-https://github.com/KSoto/iPhone-Sunrise.git
+https://github.com/KSoto/iPhone-GPS-Sunrise
+https://github.com/KSoto/iPhone-GPS-Sunrise.git
 
 //What is it?
 This is an iPhone application used for calculating the Sunrise and Sunset times 
@@ -25,13 +25,14 @@ You can optionally choose different sunrise and sunset types to be shown. To do 
 //Features Completed:
 ++ALL U.S. cities and states are includes.
 ++ALL Sunrise/Sunset types included.
+++GPS location detection
+++Indexed city table view
 
 //Bugs:
 -No known bugs.
 
 //Features Not Completed:
 --Lunar calculations in development
---GPS location detection in development
 --Labels were used instead of drawing a clock, which will be in the next release.
 
 //External Dependancies:

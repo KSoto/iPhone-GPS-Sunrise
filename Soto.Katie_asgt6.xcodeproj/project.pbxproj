@@ -11,6 +11,79 @@
 		29FDA2AA16700132007FD502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
 		29FDA2B016700132007FD502 /* Nova.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2AF16700132007FD502 /* Nova.m */; };
 		29FDA2B5167001B8007FD502 /* libNova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FDA2A916700132007FD502 /* libNova.a */; };
+		29FDA30916701462007FD502 /* aberration.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2C016701462007FD502 /* aberration.c */; };
+		29FDA30A16701462007FD502 /* aberration.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2C116701462007FD502 /* aberration.h */; };
+		29FDA30B16701462007FD502 /* airmass.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2C216701462007FD502 /* airmass.c */; };
+		29FDA30C16701462007FD502 /* airmass.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2C316701462007FD502 /* airmass.h */; };
+		29FDA30D16701462007FD502 /* angular_separation.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2C416701462007FD502 /* angular_separation.c */; };
+		29FDA30E16701462007FD502 /* angular_separation.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2C516701462007FD502 /* angular_separation.h */; };
+		29FDA30F16701462007FD502 /* apparent_position.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2C616701462007FD502 /* apparent_position.c */; };
+		29FDA31016701462007FD502 /* apparent_position.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2C716701462007FD502 /* apparent_position.h */; };
+		29FDA31116701462007FD502 /* asteroid.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2C816701462007FD502 /* asteroid.c */; };
+		29FDA31216701462007FD502 /* asteroid.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2C916701462007FD502 /* asteroid.h */; };
+		29FDA31316701462007FD502 /* comet.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2CA16701462007FD502 /* comet.c */; };
+		29FDA31416701462007FD502 /* comet.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2CB16701462007FD502 /* comet.h */; };
+		29FDA31516701462007FD502 /* dynamical_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2CC16701462007FD502 /* dynamical_time.c */; };
+		29FDA31616701462007FD502 /* dynamical_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2CD16701462007FD502 /* dynamical_time.h */; };
+		29FDA31716701462007FD502 /* earth.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2CE16701462007FD502 /* earth.c */; };
+		29FDA31816701462007FD502 /* earth.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2CF16701462007FD502 /* earth.h */; };
+		29FDA31916701462007FD502 /* elliptic_motion.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2D016701462007FD502 /* elliptic_motion.c */; };
+		29FDA31A16701462007FD502 /* elliptic_motion.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2D116701462007FD502 /* elliptic_motion.h */; };
+		29FDA31B16701462007FD502 /* heliocentric_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2D216701462007FD502 /* heliocentric_time.c */; };
+		29FDA31C16701462007FD502 /* heliocentric_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2D316701462007FD502 /* heliocentric_time.h */; };
+		29FDA31D16701462007FD502 /* hyperbolic_motion.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2D416701462007FD502 /* hyperbolic_motion.c */; };
+		29FDA31E16701462007FD502 /* hyperbolic_motion.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2D516701462007FD502 /* hyperbolic_motion.h */; };
+		29FDA31F16701462007FD502 /* iOSNova-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2D616701462007FD502 /* iOSNova-Prefix.pch */; };
+		29FDA32016701462007FD502 /* julian_day.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2D716701462007FD502 /* julian_day.c */; };
+		29FDA32116701462007FD502 /* julian_day.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2D816701462007FD502 /* julian_day.h */; };
+		29FDA32216701462007FD502 /* jupiter.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2D916701462007FD502 /* jupiter.c */; };
+		29FDA32316701462007FD502 /* jupiter.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2DA16701462007FD502 /* jupiter.h */; };
+		29FDA32416701462007FD502 /* libnova.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2DB16701462007FD502 /* libnova.h */; };
+		29FDA32516701462007FD502 /* ln_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2DC16701462007FD502 /* ln_types.h */; };
+		29FDA32616701462007FD502 /* lunar.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2DD16701462007FD502 /* lunar.c */; };
+		29FDA32716701462007FD502 /* lunar.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2DE16701462007FD502 /* lunar.h */; };
+		29FDA32816701462007FD502 /* mars.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2DF16701462007FD502 /* mars.c */; };
+		29FDA32916701462007FD502 /* mars.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2E016701462007FD502 /* mars.h */; };
+		29FDA32A16701462007FD502 /* mercury.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2E116701462007FD502 /* mercury.c */; };
+		29FDA32B16701462007FD502 /* mercury.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2E216701462007FD502 /* mercury.h */; };
+		29FDA32C16701462007FD502 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2E316701462007FD502 /* misc.c */; };
+		29FDA32D16701462007FD502 /* neptune.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2E416701462007FD502 /* neptune.c */; };
+		29FDA32E16701462007FD502 /* neptune.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2E516701462007FD502 /* neptune.h */; };
+		29FDA32F16701462007FD502 /* Nova-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2E616701462007FD502 /* Nova-Prefix.pch */; };
+		29FDA33016701462007FD502 /* Nova.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2E716701462007FD502 /* Nova.h */; };
+		29FDA33116701462007FD502 /* Nova.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2E816701462007FD502 /* Nova.m */; };
+		29FDA33216701462007FD502 /* nutation.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2E916701462007FD502 /* nutation.c */; };
+		29FDA33316701462007FD502 /* nutation.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2EA16701462007FD502 /* nutation.h */; };
+		29FDA33416701462007FD502 /* parabolic_motion.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2EB16701462007FD502 /* parabolic_motion.c */; };
+		29FDA33516701462007FD502 /* parabolic_motion.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2EC16701462007FD502 /* parabolic_motion.h */; };
+		29FDA33616701462007FD502 /* parallax.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2ED16701462007FD502 /* parallax.c */; };
+		29FDA33716701462007FD502 /* parallax.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2EE16701462007FD502 /* parallax.h */; };
+		29FDA33816701462007FD502 /* pluto.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2EF16701462007FD502 /* pluto.c */; };
+		29FDA33916701462007FD502 /* pluto.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2F016701462007FD502 /* pluto.h */; };
+		29FDA33A16701462007FD502 /* precession.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2F116701462007FD502 /* precession.c */; };
+		29FDA33B16701462007FD502 /* precession.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2F216701462007FD502 /* precession.h */; };
+		29FDA33C16701462007FD502 /* proper_motion.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2F316701462007FD502 /* proper_motion.c */; };
+		29FDA33D16701462007FD502 /* proper_motion.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2F416701462007FD502 /* proper_motion.h */; };
+		29FDA33E16701462007FD502 /* refraction.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2F516701462007FD502 /* refraction.c */; };
+		29FDA33F16701462007FD502 /* refraction.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2F616701462007FD502 /* refraction.h */; };
+		29FDA34016701462007FD502 /* rise_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2F716701462007FD502 /* rise_set.c */; };
+		29FDA34116701462007FD502 /* rise_set.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2F816701462007FD502 /* rise_set.h */; };
+		29FDA34216701462007FD502 /* saturn.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2F916701462007FD502 /* saturn.c */; };
+		29FDA34316701462007FD502 /* saturn.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2FA16701462007FD502 /* saturn.h */; };
+		29FDA34416701462007FD502 /* sidereal_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2FB16701462007FD502 /* sidereal_time.c */; };
+		29FDA34516701462007FD502 /* sidereal_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2FC16701462007FD502 /* sidereal_time.h */; };
+		29FDA34616701462007FD502 /* solar.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2FD16701462007FD502 /* solar.c */; };
+		29FDA34716701462007FD502 /* solar.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA2FE16701462007FD502 /* solar.h */; };
+		29FDA34816701462007FD502 /* transform.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2FF16701462007FD502 /* transform.c */; };
+		29FDA34916701462007FD502 /* transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA30016701462007FD502 /* transform.h */; };
+		29FDA34A16701462007FD502 /* uranus.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA30116701462007FD502 /* uranus.c */; };
+		29FDA34B16701462007FD502 /* uranus.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA30216701462007FD502 /* uranus.h */; };
+		29FDA34C16701462007FD502 /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA30316701462007FD502 /* utility.c */; };
+		29FDA34D16701462007FD502 /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA30416701462007FD502 /* utility.h */; };
+		29FDA34E16701462007FD502 /* venus.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA30516701462007FD502 /* venus.c */; };
+		29FDA34F16701462007FD502 /* venus.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA30616701462007FD502 /* venus.h */; };
+		29FDA35016701462007FD502 /* vsop87.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA30716701462007FD502 /* vsop87.c */; };
+		29FDA35116701462007FD502 /* vsop87.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA30816701462007FD502 /* vsop87.h */; };
 		AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A18D1664148F005783FD /* USLocationsDatabase.m */; };
 		AC45A1921664174C005783FD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A1911664174C005783FD /* Location.m */; };
 		AC45A19416641A62005783FD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45A19316641A62005783FD /* libsqlite3.dylib */; };
@@ -64,6 +137,79 @@
 		29FDA2AD16700132007FD502 /* Nova-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nova-Prefix.pch"; sourceTree = "<group>"; };
 		29FDA2AE16700132007FD502 /* Nova.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nova.h; sourceTree = "<group>"; };
 		29FDA2AF16700132007FD502 /* Nova.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nova.m; sourceTree = "<group>"; };
+		29FDA2C016701462007FD502 /* aberration.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aberration.c; sourceTree = "<group>"; };
+		29FDA2C116701462007FD502 /* aberration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aberration.h; sourceTree = "<group>"; };
+		29FDA2C216701462007FD502 /* airmass.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = airmass.c; sourceTree = "<group>"; };
+		29FDA2C316701462007FD502 /* airmass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = airmass.h; sourceTree = "<group>"; };
+		29FDA2C416701462007FD502 /* angular_separation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = angular_separation.c; sourceTree = "<group>"; };
+		29FDA2C516701462007FD502 /* angular_separation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = angular_separation.h; sourceTree = "<group>"; };
+		29FDA2C616701462007FD502 /* apparent_position.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = apparent_position.c; sourceTree = "<group>"; };
+		29FDA2C716701462007FD502 /* apparent_position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apparent_position.h; sourceTree = "<group>"; };
+		29FDA2C816701462007FD502 /* asteroid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = asteroid.c; sourceTree = "<group>"; };
+		29FDA2C916701462007FD502 /* asteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asteroid.h; sourceTree = "<group>"; };
+		29FDA2CA16701462007FD502 /* comet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = comet.c; sourceTree = "<group>"; };
+		29FDA2CB16701462007FD502 /* comet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comet.h; sourceTree = "<group>"; };
+		29FDA2CC16701462007FD502 /* dynamical_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dynamical_time.c; sourceTree = "<group>"; };
+		29FDA2CD16701462007FD502 /* dynamical_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dynamical_time.h; sourceTree = "<group>"; };
+		29FDA2CE16701462007FD502 /* earth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = earth.c; sourceTree = "<group>"; };
+		29FDA2CF16701462007FD502 /* earth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = earth.h; sourceTree = "<group>"; };
+		29FDA2D016701462007FD502 /* elliptic_motion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = elliptic_motion.c; sourceTree = "<group>"; };
+		29FDA2D116701462007FD502 /* elliptic_motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = elliptic_motion.h; sourceTree = "<group>"; };
+		29FDA2D216701462007FD502 /* heliocentric_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = heliocentric_time.c; sourceTree = "<group>"; };
+		29FDA2D316701462007FD502 /* heliocentric_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heliocentric_time.h; sourceTree = "<group>"; };
+		29FDA2D416701462007FD502 /* hyperbolic_motion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hyperbolic_motion.c; sourceTree = "<group>"; };
+		29FDA2D516701462007FD502 /* hyperbolic_motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hyperbolic_motion.h; sourceTree = "<group>"; };
+		29FDA2D616701462007FD502 /* iOSNova-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOSNova-Prefix.pch"; sourceTree = "<group>"; };
+		29FDA2D716701462007FD502 /* julian_day.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = julian_day.c; sourceTree = "<group>"; };
+		29FDA2D816701462007FD502 /* julian_day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = julian_day.h; sourceTree = "<group>"; };
+		29FDA2D916701462007FD502 /* jupiter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jupiter.c; sourceTree = "<group>"; };
+		29FDA2DA16701462007FD502 /* jupiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jupiter.h; sourceTree = "<group>"; };
+		29FDA2DB16701462007FD502 /* libnova.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libnova.h; sourceTree = "<group>"; };
+		29FDA2DC16701462007FD502 /* ln_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ln_types.h; sourceTree = "<group>"; };
+		29FDA2DD16701462007FD502 /* lunar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lunar.c; sourceTree = "<group>"; };
+		29FDA2DE16701462007FD502 /* lunar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lunar.h; sourceTree = "<group>"; };
+		29FDA2DF16701462007FD502 /* mars.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mars.c; sourceTree = "<group>"; };
+		29FDA2E016701462007FD502 /* mars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mars.h; sourceTree = "<group>"; };
+		29FDA2E116701462007FD502 /* mercury.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mercury.c; sourceTree = "<group>"; };
+		29FDA2E216701462007FD502 /* mercury.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mercury.h; sourceTree = "<group>"; };
+		29FDA2E316701462007FD502 /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		29FDA2E416701462007FD502 /* neptune.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = neptune.c; sourceTree = "<group>"; };
+		29FDA2E516701462007FD502 /* neptune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neptune.h; sourceTree = "<group>"; };
+		29FDA2E616701462007FD502 /* Nova-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nova-Prefix.pch"; sourceTree = "<group>"; };
+		29FDA2E716701462007FD502 /* Nova.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nova.h; sourceTree = "<group>"; };
+		29FDA2E816701462007FD502 /* Nova.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nova.m; sourceTree = "<group>"; };
+		29FDA2E916701462007FD502 /* nutation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nutation.c; sourceTree = "<group>"; };
+		29FDA2EA16701462007FD502 /* nutation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nutation.h; sourceTree = "<group>"; };
+		29FDA2EB16701462007FD502 /* parabolic_motion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parabolic_motion.c; sourceTree = "<group>"; };
+		29FDA2EC16701462007FD502 /* parabolic_motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parabolic_motion.h; sourceTree = "<group>"; };
+		29FDA2ED16701462007FD502 /* parallax.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parallax.c; sourceTree = "<group>"; };
+		29FDA2EE16701462007FD502 /* parallax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parallax.h; sourceTree = "<group>"; };
+		29FDA2EF16701462007FD502 /* pluto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pluto.c; sourceTree = "<group>"; };
+		29FDA2F016701462007FD502 /* pluto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pluto.h; sourceTree = "<group>"; };
+		29FDA2F116701462007FD502 /* precession.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = precession.c; sourceTree = "<group>"; };
+		29FDA2F216701462007FD502 /* precession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = precession.h; sourceTree = "<group>"; };
+		29FDA2F316701462007FD502 /* proper_motion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = proper_motion.c; sourceTree = "<group>"; };
+		29FDA2F416701462007FD502 /* proper_motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proper_motion.h; sourceTree = "<group>"; };
+		29FDA2F516701462007FD502 /* refraction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = refraction.c; sourceTree = "<group>"; };
+		29FDA2F616701462007FD502 /* refraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = refraction.h; sourceTree = "<group>"; };
+		29FDA2F716701462007FD502 /* rise_set.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rise_set.c; sourceTree = "<group>"; };
+		29FDA2F816701462007FD502 /* rise_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rise_set.h; sourceTree = "<group>"; };
+		29FDA2F916701462007FD502 /* saturn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = saturn.c; sourceTree = "<group>"; };
+		29FDA2FA16701462007FD502 /* saturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saturn.h; sourceTree = "<group>"; };
+		29FDA2FB16701462007FD502 /* sidereal_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sidereal_time.c; sourceTree = "<group>"; };
+		29FDA2FC16701462007FD502 /* sidereal_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sidereal_time.h; sourceTree = "<group>"; };
+		29FDA2FD16701462007FD502 /* solar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = solar.c; sourceTree = "<group>"; };
+		29FDA2FE16701462007FD502 /* solar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = solar.h; sourceTree = "<group>"; };
+		29FDA2FF16701462007FD502 /* transform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transform.c; sourceTree = "<group>"; };
+		29FDA30016701462007FD502 /* transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transform.h; sourceTree = "<group>"; };
+		29FDA30116701462007FD502 /* uranus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uranus.c; sourceTree = "<group>"; };
+		29FDA30216701462007FD502 /* uranus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uranus.h; sourceTree = "<group>"; };
+		29FDA30316701462007FD502 /* utility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utility.c; sourceTree = "<group>"; };
+		29FDA30416701462007FD502 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
+		29FDA30516701462007FD502 /* venus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = venus.c; sourceTree = "<group>"; };
+		29FDA30616701462007FD502 /* venus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = venus.h; sourceTree = "<group>"; };
+		29FDA30716701462007FD502 /* vsop87.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vsop87.c; sourceTree = "<group>"; };
+		29FDA30816701462007FD502 /* vsop87.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vsop87.h; sourceTree = "<group>"; };
 		AC45A18C1664148F005783FD /* USLocationsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USLocationsDatabase.h; path = Soto.Katie_asgt6/USLocationsDatabase.h; sourceTree = "<group>"; };
 		AC45A18D1664148F005783FD /* USLocationsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USLocationsDatabase.m; path = Soto.Katie_asgt6/USLocationsDatabase.m; sourceTree = "<group>"; };
 		AC45A1901664174C005783FD /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Soto.Katie_asgt6/Location.h; sourceTree = "<group>"; };
@@ -158,6 +304,79 @@
 		29FDA2AB16700132007FD502 /* Nova */ = {
 			isa = PBXGroup;
 			children = (
+				29FDA2C016701462007FD502 /* aberration.c */,
+				29FDA2C116701462007FD502 /* aberration.h */,
+				29FDA2C216701462007FD502 /* airmass.c */,
+				29FDA2C316701462007FD502 /* airmass.h */,
+				29FDA2C416701462007FD502 /* angular_separation.c */,
+				29FDA2C516701462007FD502 /* angular_separation.h */,
+				29FDA2C616701462007FD502 /* apparent_position.c */,
+				29FDA2C716701462007FD502 /* apparent_position.h */,
+				29FDA2C816701462007FD502 /* asteroid.c */,
+				29FDA2C916701462007FD502 /* asteroid.h */,
+				29FDA2CA16701462007FD502 /* comet.c */,
+				29FDA2CB16701462007FD502 /* comet.h */,
+				29FDA2CC16701462007FD502 /* dynamical_time.c */,
+				29FDA2CD16701462007FD502 /* dynamical_time.h */,
+				29FDA2CE16701462007FD502 /* earth.c */,
+				29FDA2CF16701462007FD502 /* earth.h */,
+				29FDA2D016701462007FD502 /* elliptic_motion.c */,
+				29FDA2D116701462007FD502 /* elliptic_motion.h */,
+				29FDA2D216701462007FD502 /* heliocentric_time.c */,
+				29FDA2D316701462007FD502 /* heliocentric_time.h */,
+				29FDA2D416701462007FD502 /* hyperbolic_motion.c */,
+				29FDA2D516701462007FD502 /* hyperbolic_motion.h */,
+				29FDA2D616701462007FD502 /* iOSNova-Prefix.pch */,
+				29FDA2D716701462007FD502 /* julian_day.c */,
+				29FDA2D816701462007FD502 /* julian_day.h */,
+				29FDA2D916701462007FD502 /* jupiter.c */,
+				29FDA2DA16701462007FD502 /* jupiter.h */,
+				29FDA2DB16701462007FD502 /* libnova.h */,
+				29FDA2DC16701462007FD502 /* ln_types.h */,
+				29FDA2DD16701462007FD502 /* lunar.c */,
+				29FDA2DE16701462007FD502 /* lunar.h */,
+				29FDA2DF16701462007FD502 /* mars.c */,
+				29FDA2E016701462007FD502 /* mars.h */,
+				29FDA2E116701462007FD502 /* mercury.c */,
+				29FDA2E216701462007FD502 /* mercury.h */,
+				29FDA2E316701462007FD502 /* misc.c */,
+				29FDA2E416701462007FD502 /* neptune.c */,
+				29FDA2E516701462007FD502 /* neptune.h */,
+				29FDA2E616701462007FD502 /* Nova-Prefix.pch */,
+				29FDA2E716701462007FD502 /* Nova.h */,
+				29FDA2E816701462007FD502 /* Nova.m */,
+				29FDA2E916701462007FD502 /* nutation.c */,
+				29FDA2EA16701462007FD502 /* nutation.h */,
+				29FDA2EB16701462007FD502 /* parabolic_motion.c */,
+				29FDA2EC16701462007FD502 /* parabolic_motion.h */,
+				29FDA2ED16701462007FD502 /* parallax.c */,
+				29FDA2EE16701462007FD502 /* parallax.h */,
+				29FDA2EF16701462007FD502 /* pluto.c */,
+				29FDA2F016701462007FD502 /* pluto.h */,
+				29FDA2F116701462007FD502 /* precession.c */,
+				29FDA2F216701462007FD502 /* precession.h */,
+				29FDA2F316701462007FD502 /* proper_motion.c */,
+				29FDA2F416701462007FD502 /* proper_motion.h */,
+				29FDA2F516701462007FD502 /* refraction.c */,
+				29FDA2F616701462007FD502 /* refraction.h */,
+				29FDA2F716701462007FD502 /* rise_set.c */,
+				29FDA2F816701462007FD502 /* rise_set.h */,
+				29FDA2F916701462007FD502 /* saturn.c */,
+				29FDA2FA16701462007FD502 /* saturn.h */,
+				29FDA2FB16701462007FD502 /* sidereal_time.c */,
+				29FDA2FC16701462007FD502 /* sidereal_time.h */,
+				29FDA2FD16701462007FD502 /* solar.c */,
+				29FDA2FE16701462007FD502 /* solar.h */,
+				29FDA2FF16701462007FD502 /* transform.c */,
+				29FDA30016701462007FD502 /* transform.h */,
+				29FDA30116701462007FD502 /* uranus.c */,
+				29FDA30216701462007FD502 /* uranus.h */,
+				29FDA30316701462007FD502 /* utility.c */,
+				29FDA30416701462007FD502 /* utility.h */,
+				29FDA30516701462007FD502 /* venus.c */,
+				29FDA30616701462007FD502 /* venus.h */,
+				29FDA30716701462007FD502 /* vsop87.c */,
+				29FDA30816701462007FD502 /* vsop87.h */,
 				29FDA2AE16700132007FD502 /* Nova.h */,
 				29FDA2AF16700132007FD502 /* Nova.m */,
 				29FDA2AC16700132007FD502 /* Supporting Files */,
@@ -305,6 +524,44 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FDA30A16701462007FD502 /* aberration.h in Headers */,
+				29FDA30C16701462007FD502 /* airmass.h in Headers */,
+				29FDA30E16701462007FD502 /* angular_separation.h in Headers */,
+				29FDA31016701462007FD502 /* apparent_position.h in Headers */,
+				29FDA31216701462007FD502 /* asteroid.h in Headers */,
+				29FDA31416701462007FD502 /* comet.h in Headers */,
+				29FDA31616701462007FD502 /* dynamical_time.h in Headers */,
+				29FDA31816701462007FD502 /* earth.h in Headers */,
+				29FDA31A16701462007FD502 /* elliptic_motion.h in Headers */,
+				29FDA31C16701462007FD502 /* heliocentric_time.h in Headers */,
+				29FDA31E16701462007FD502 /* hyperbolic_motion.h in Headers */,
+				29FDA31F16701462007FD502 /* iOSNova-Prefix.pch in Headers */,
+				29FDA32116701462007FD502 /* julian_day.h in Headers */,
+				29FDA32316701462007FD502 /* jupiter.h in Headers */,
+				29FDA32416701462007FD502 /* libnova.h in Headers */,
+				29FDA32516701462007FD502 /* ln_types.h in Headers */,
+				29FDA32716701462007FD502 /* lunar.h in Headers */,
+				29FDA32916701462007FD502 /* mars.h in Headers */,
+				29FDA32B16701462007FD502 /* mercury.h in Headers */,
+				29FDA32E16701462007FD502 /* neptune.h in Headers */,
+				29FDA32F16701462007FD502 /* Nova-Prefix.pch in Headers */,
+				29FDA33016701462007FD502 /* Nova.h in Headers */,
+				29FDA33316701462007FD502 /* nutation.h in Headers */,
+				29FDA33516701462007FD502 /* parabolic_motion.h in Headers */,
+				29FDA33716701462007FD502 /* parallax.h in Headers */,
+				29FDA33916701462007FD502 /* pluto.h in Headers */,
+				29FDA33B16701462007FD502 /* precession.h in Headers */,
+				29FDA33D16701462007FD502 /* proper_motion.h in Headers */,
+				29FDA33F16701462007FD502 /* refraction.h in Headers */,
+				29FDA34116701462007FD502 /* rise_set.h in Headers */,
+				29FDA34316701462007FD502 /* saturn.h in Headers */,
+				29FDA34516701462007FD502 /* sidereal_time.h in Headers */,
+				29FDA34716701462007FD502 /* solar.h in Headers */,
+				29FDA34916701462007FD502 /* transform.h in Headers */,
+				29FDA34B16701462007FD502 /* uranus.h in Headers */,
+				29FDA34D16701462007FD502 /* utility.h in Headers */,
+				29FDA34F16701462007FD502 /* venus.h in Headers */,
+				29FDA35116701462007FD502 /* vsop87.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +677,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				29FDA2B016700132007FD502 /* Nova.m in Sources */,
+				29FDA30916701462007FD502 /* aberration.c in Sources */,
+				29FDA30B16701462007FD502 /* airmass.c in Sources */,
+				29FDA30D16701462007FD502 /* angular_separation.c in Sources */,
+				29FDA30F16701462007FD502 /* apparent_position.c in Sources */,
+				29FDA31116701462007FD502 /* asteroid.c in Sources */,
+				29FDA31316701462007FD502 /* comet.c in Sources */,
+				29FDA31516701462007FD502 /* dynamical_time.c in Sources */,
+				29FDA31716701462007FD502 /* earth.c in Sources */,
+				29FDA31916701462007FD502 /* elliptic_motion.c in Sources */,
+				29FDA31B16701462007FD502 /* heliocentric_time.c in Sources */,
+				29FDA31D16701462007FD502 /* hyperbolic_motion.c in Sources */,
+				29FDA32016701462007FD502 /* julian_day.c in Sources */,
+				29FDA32216701462007FD502 /* jupiter.c in Sources */,
+				29FDA32616701462007FD502 /* lunar.c in Sources */,
+				29FDA32816701462007FD502 /* mars.c in Sources */,
+				29FDA32A16701462007FD502 /* mercury.c in Sources */,
+				29FDA32C16701462007FD502 /* misc.c in Sources */,
+				29FDA32D16701462007FD502 /* neptune.c in Sources */,
+				29FDA33116701462007FD502 /* Nova.m in Sources */,
+				29FDA33216701462007FD502 /* nutation.c in Sources */,
+				29FDA33416701462007FD502 /* parabolic_motion.c in Sources */,
+				29FDA33616701462007FD502 /* parallax.c in Sources */,
+				29FDA33816701462007FD502 /* pluto.c in Sources */,
+				29FDA33A16701462007FD502 /* precession.c in Sources */,
+				29FDA33C16701462007FD502 /* proper_motion.c in Sources */,
+				29FDA33E16701462007FD502 /* refraction.c in Sources */,
+				29FDA34016701462007FD502 /* rise_set.c in Sources */,
+				29FDA34216701462007FD502 /* saturn.c in Sources */,
+				29FDA34416701462007FD502 /* sidereal_time.c in Sources */,
+				29FDA34616701462007FD502 /* solar.c in Sources */,
+				29FDA34816701462007FD502 /* transform.c in Sources */,
+				29FDA34A16701462007FD502 /* uranus.c in Sources */,
+				29FDA34C16701462007FD502 /* utility.c in Sources */,
+				29FDA34E16701462007FD502 /* venus.c in Sources */,
+				29FDA35016701462007FD502 /* vsop87.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
