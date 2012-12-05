@@ -163,11 +163,11 @@
 		CEB8173F1652FF3F00DBAB71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC45A19516641A6C005783FD /* CoreLocation.framework */,
-				AC45A19316641A62005783FD /* libsqlite3.dylib */,
 				CEB817401652FF3F00DBAB71 /* UIKit.framework */,
 				CEB817421652FF3F00DBAB71 /* Foundation.framework */,
+				AC45A19516641A6C005783FD /* CoreLocation.framework */,
 				CEB817441652FF3F00DBAB71 /* CoreGraphics.framework */,
+				AC45A19316641A62005783FD /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -421,7 +421,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -443,7 +443,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
