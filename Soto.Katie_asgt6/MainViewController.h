@@ -38,6 +38,7 @@
 #import "iOSSunrise.h"
 #import "Sunrise.h" //doesn't have anything in it, but I want to include it anyway...
 #import "Location.h"
+#import "Nova.h" //doesn't have anything in it, but I want to include it anyway...
 
 @interface MainViewController : UIViewController
 {

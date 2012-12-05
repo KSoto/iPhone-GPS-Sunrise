@@ -213,6 +213,7 @@
         self.astroSunriseLabel.hidden = TRUE;
         self.astroSunsetLabel.hidden = TRUE;
     }
+     
     
 }
 

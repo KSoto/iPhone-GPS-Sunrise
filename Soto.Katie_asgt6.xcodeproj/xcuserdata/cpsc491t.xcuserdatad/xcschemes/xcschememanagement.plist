@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Nova.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Soto.Katie_asgt6.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>29FDA2A816700132007FD502</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CEB8173B1652FF3E00DBAB71</key>
 		<dict>
 			<key>primary</key>

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		29FDA299166FF498007FD502 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FDA297166FF498007FD502 /* MainStoryboard_iPhone.storyboard */; };
+		29FDA2AA16700132007FD502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
+		29FDA2B016700132007FD502 /* Nova.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA2AF16700132007FD502 /* Nova.m */; };
+		29FDA2B5167001B8007FD502 /* libNova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FDA2A916700132007FD502 /* libNova.a */; };
 		AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A18D1664148F005783FD /* USLocationsDatabase.m */; };
 		AC45A1921664174C005783FD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A1911664174C005783FD /* Location.m */; };
 		AC45A19416641A62005783FD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45A19316641A62005783FD /* libsqlite3.dylib */; };
@@ -57,6 +60,10 @@
 
 /* Begin PBXFileReference section */
 		29FDA298166FF498007FD502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		29FDA2A916700132007FD502 /* libNova.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNova.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		29FDA2AD16700132007FD502 /* Nova-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nova-Prefix.pch"; sourceTree = "<group>"; };
+		29FDA2AE16700132007FD502 /* Nova.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nova.h; sourceTree = "<group>"; };
+		29FDA2AF16700132007FD502 /* Nova.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nova.m; sourceTree = "<group>"; };
 		AC45A18C1664148F005783FD /* USLocationsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USLocationsDatabase.h; path = Soto.Katie_asgt6/USLocationsDatabase.h; sourceTree = "<group>"; };
 		AC45A18D1664148F005783FD /* USLocationsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USLocationsDatabase.m; path = Soto.Katie_asgt6/USLocationsDatabase.m; sourceTree = "<group>"; };
 		AC45A1901664174C005783FD /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Soto.Katie_asgt6/Location.h; sourceTree = "<group>"; };
@@ -104,11 +111,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		29FDA2A616700132007FD502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29FDA2AA16700132007FD502 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB817391652FF3E00DBAB71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CEB817A9165308E600DBAB71 /* libSunrise.a in Frameworks */,
+				29FDA2B5167001B8007FD502 /* libNova.a in Frameworks */,
 				CEB817411652FF3F00DBAB71 /* UIKit.framework in Frameworks */,
 				CEB817431652FF3F00DBAB71 /* Foundation.framework in Frameworks */,
 				CEB817451652FF3F00DBAB71 /* CoreGraphics.framework in Frameworks */,
@@ -139,6 +155,25 @@
 			name = "Database Helpers";
 			sourceTree = "<group>";
 		};
+		29FDA2AB16700132007FD502 /* Nova */ = {
+			isa = PBXGroup;
+			children = (
+				29FDA2AE16700132007FD502 /* Nova.h */,
+				29FDA2AF16700132007FD502 /* Nova.m */,
+				29FDA2AC16700132007FD502 /* Supporting Files */,
+			);
+			name = Nova;
+			path = ../Nova;
+			sourceTree = "<group>";
+		};
+		29FDA2AC16700132007FD502 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29FDA2AD16700132007FD502 /* Nova-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CEB817311652FF3E00DBAB71 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +191,7 @@
 			children = (
 				CEB8173C1652FF3F00DBAB71 /* Soto.Katie_asgt6.app */,
 				CEB8179D165308D000DBAB71 /* libSunrise.a */,
+				29FDA2A916700132007FD502 /* libNova.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +243,7 @@
 		CEB817601653002F00DBAB71 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				29FDA2AB16700132007FD502 /* Nova */,
 				CEB8176D165302A300DBAB71 /* Sunrise */,
 			);
 			name = Libraries;
@@ -263,7 +300,34 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		29FDA2A716700132007FD502 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		29FDA2A816700132007FD502 /* Nova */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29FDA2B116700132007FD502 /* Build configuration list for PBXNativeTarget "Nova" */;
+			buildPhases = (
+				29FDA2A516700132007FD502 /* Sources */,
+				29FDA2A616700132007FD502 /* Frameworks */,
+				29FDA2A716700132007FD502 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nova;
+			productName = Nova;
+			productReference = 29FDA2A916700132007FD502 /* libNova.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		CEB8173B1652FF3E00DBAB71 /* Soto.Katie_asgt6 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEB8175D1652FF3F00DBAB71 /* Build configuration list for PBXNativeTarget "Soto.Katie_asgt6" */;
@@ -321,6 +385,7 @@
 			targets = (
 				CEB8173B1652FF3E00DBAB71 /* Soto.Katie_asgt6 */,
 				CEB8179C165308D000DBAB71 /* Sunrise */,
+				29FDA2A816700132007FD502 /* Nova */,
 			);
 		};
 /* End PBXProject section */
@@ -350,6 +415,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		29FDA2A516700132007FD502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29FDA2B016700132007FD502 /* Nova.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB817381652FF3E00DBAB71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +470,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		29FDA2B216700132007FD502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Nova.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nova/Nova-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		29FDA2B316700132007FD502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Nova.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nova/Nova-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		CEB8175B1652FF3F00DBAB71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -499,6 +596,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		29FDA2B116700132007FD502 /* Build configuration list for PBXNativeTarget "Nova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29FDA2B216700132007FD502 /* Debug */,
+				29FDA2B316700132007FD502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CEB817361652FF3E00DBAB71 /* Build configuration list for PBXProject "Soto.Katie_asgt6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

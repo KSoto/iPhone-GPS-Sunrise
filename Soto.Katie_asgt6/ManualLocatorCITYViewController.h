@@ -37,19 +37,29 @@
 
 @interface ManualLocatorCITYViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
-    NSArray* _cities;
+    
     IBOutlet UITableView *tableView;
     Location* _selectedRegion;
     NSString* _regionString;
     
     //http://codeexamples.wordpress.com/2011/02/12/nsuserdefaults-example/
     NSUserDefaults * standardUserDefaults;
+    
+    //http://developer.apple.com/library/ios/#samplecode/TableViewSuite/Introduction/Intro.html
+    NSMutableArray* _cities;
+    NSMutableArray *sectionsArray; //this will create an array with A-Z for the sections
+    UILocalizedIndexedCollation *collation;
 }
 
-@property (nonatomic, retain) NSArray* cities;
+@property (nonatomic, retain) NSMutableArray* cities;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 @property (nonatomic, retain) Location* selectedRegion;
 @property (nonatomic, retain) NSString* regionString;
 @property (nonatomic, retain) NSUserDefaults * standardUserDefaults;
+
+@property (nonatomic, retain) NSMutableArray *sectionsArray;
+@property (nonatomic, retain) UILocalizedIndexedCollation *collation;
+- (void)configureSections;
+- (void)setTimeZonesArray:(NSMutableArray *)newDataArray;
 
 @end

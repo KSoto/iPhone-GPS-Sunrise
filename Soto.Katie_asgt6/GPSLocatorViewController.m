@@ -51,6 +51,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    self.standardUserDefaults = [NSUserDefaults standardUserDefaults];
+    
     self.longLabel.hidden = TRUE;
     self.latLabel.hidden = TRUE;
     self.successLabel.hidden = TRUE;
@@ -107,8 +109,8 @@
         
         //save coordinates
         [self.standardUserDefaults setObject:@"GPS Retrieved" forKey:@"cityName"];
-        [self.standardUserDefaults setDouble:currentLocation.coordinate.latitude forKey:@"cityLat"];
-        [self.standardUserDefaults setDouble:currentLocation.coordinate.longitude forKey:@"cityLon"];
+        [self.standardUserDefaults setDouble:currentLocation.coordinate.latitude forKey:@"cityLon"];
+        [self.standardUserDefaults setDouble:currentLocation.coordinate.longitude forKey:@"cityLat"];
         
         // synchronize the settings
         [self.standardUserDefaults synchronize];
