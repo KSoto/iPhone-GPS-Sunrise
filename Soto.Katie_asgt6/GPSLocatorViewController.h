@@ -21,16 +21,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface GPSLocatorViewController : UIViewController
+@interface GPSLocatorViewController : UIViewController <CLLocationManagerDelegate>
 {
-    IBOutlet UILabel* _coordLabel;
+    //http://www.appcoda.com/how-to-get-current-location-iphone-user/
+    IBOutlet UILabel* _latLabel;
+    IBOutlet UILabel* _longLabel;
+    IBOutlet UILabel* _successLabel;
     
     //http://codeexamples.wordpress.com/2011/02/12/nsuserdefaults-example/
     NSUserDefaults * standardUserDefaults;
 }
 
-@property (retain, nonatomic) IBOutlet UILabel* coordLabel;
+@property (retain, nonatomic) IBOutlet UILabel *latLabel;
+@property (retain, nonatomic) IBOutlet UILabel *longLabel;
+@property (retain, nonatomic) IBOutlet UILabel *successLabel;
 @property (nonatomic, retain) NSUserDefaults * standardUserDefaults;
 
 @end

@@ -59,6 +59,8 @@
 @synthesize nautical;
 @synthesize astro;
 
+@synthesize standardUserDefaults;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		295A2418166D5924008BE356 /* CLLocation (Strings).m in Sources */ = {isa = PBXBuildFile; fileRef = 295A2417166D5924008BE356 /* CLLocation (Strings).m */; };
-		295A241C166D5A59008BE356 /* MyLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 295A241B166D5A59008BE356 /* MyLocationManager.m */; };
+		29FDA299166FF498007FD502 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FDA297166FF498007FD502 /* MainStoryboard_iPhone.storyboard */; };
 		AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A18D1664148F005783FD /* USLocationsDatabase.m */; };
 		AC45A1921664174C005783FD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A1911664174C005783FD /* Location.m */; };
 		AC45A19416641A62005783FD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45A19316641A62005783FD /* libsqlite3.dylib */; };
@@ -27,7 +26,6 @@
 		CEB8174B1652FF3F00DBAB71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEB817491652FF3F00DBAB71 /* InfoPlist.strings */; };
 		CEB8174D1652FF3F00DBAB71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8174C1652FF3F00DBAB71 /* main.m */; };
 		CEB817511652FF3F00DBAB71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB817501652FF3F00DBAB71 /* AppDelegate.m */; };
-		CEB817541652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB817521652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard */; };
 		CEB81797165307B700DBAB71 /* us_only.sq3 in Resources */ = {isa = PBXBuildFile; fileRef = CEB81795165307B700DBAB71 /* us_only.sq3 */; };
 		CEB8179E165308D000DBAB71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
 		CEB817A3165308D000DBAB71 /* Sunrise.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEB817A2165308D000DBAB71 /* Sunrise.h */; };
@@ -58,10 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		295A2416166D5924008BE356 /* CLLocation (Strings).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocation (Strings).h"; path = "Soto.Katie_asgt6/CLLocation (Strings).h"; sourceTree = "<group>"; };
-		295A2417166D5924008BE356 /* CLLocation (Strings).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocation (Strings).m"; path = "Soto.Katie_asgt6/CLLocation (Strings).m"; sourceTree = "<group>"; };
-		295A241A166D5A59008BE356 /* MyLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLocationManager.h; path = Soto.Katie_asgt6/MyLocationManager.h; sourceTree = "<group>"; };
-		295A241B166D5A59008BE356 /* MyLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLocationManager.m; path = Soto.Katie_asgt6/MyLocationManager.m; sourceTree = "<group>"; };
+		29FDA298166FF498007FD502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		AC45A18C1664148F005783FD /* USLocationsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USLocationsDatabase.h; path = Soto.Katie_asgt6/USLocationsDatabase.h; sourceTree = "<group>"; };
 		AC45A18D1664148F005783FD /* USLocationsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USLocationsDatabase.m; path = Soto.Katie_asgt6/USLocationsDatabase.m; sourceTree = "<group>"; };
 		AC45A1901664174C005783FD /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Soto.Katie_asgt6/Location.h; sourceTree = "<group>"; };
@@ -87,8 +82,6 @@
 		CEB8174E1652FF3F00DBAB71 /* Soto.Katie_asgt6-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Soto.Katie_asgt6-Prefix.pch"; sourceTree = "<group>"; };
 		CEB8174F1652FF3F00DBAB71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEB817501652FF3F00DBAB71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEB817531652FF3F00DBAB71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		CEB8177C1653042E00DBAB71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CEB81795165307B700DBAB71 /* us_only.sq3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = us_only.sq3; path = Resources/us_only.sq3; sourceTree = "<group>"; };
 		CEB8179D165308D000DBAB71 /* libSunrise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSunrise.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB817A1165308D000DBAB71 /* Sunrise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sunrise-Prefix.pch"; sourceTree = "<group>"; };
@@ -135,17 +128,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		295A241D166D5C86008BE356 /* GPS Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				295A2416166D5924008BE356 /* CLLocation (Strings).h */,
-				295A2417166D5924008BE356 /* CLLocation (Strings).m */,
-				295A241A166D5A59008BE356 /* MyLocationManager.h */,
-				295A241B166D5A59008BE356 /* MyLocationManager.m */,
-			);
-			name = "GPS Helpers";
-			sourceTree = "<group>";
-		};
 		295A241E166D5C9C008BE356 /* Database Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +144,6 @@
 			children = (
 				CEB817461652FF3F00DBAB71 /* Soto.Katie_asgt6 */,
 				295A241E166D5C9C008BE356 /* Database Helpers */,
-				295A241D166D5C86008BE356 /* GPS Helpers */,
 				CEB817601653002F00DBAB71 /* Libraries */,
 				CEB817611653005C00DBAB71 /* Resources */,
 				CEB8173F1652FF3F00DBAB71 /* Frameworks */,
@@ -184,7 +165,6 @@
 			children = (
 				AC45A19516641A6C005783FD /* CoreLocation.framework */,
 				AC45A19316641A62005783FD /* libsqlite3.dylib */,
-				CEB8177C1653042E00DBAB71 /* Foundation.framework */,
 				CEB817401652FF3F00DBAB71 /* UIKit.framework */,
 				CEB817421652FF3F00DBAB71 /* Foundation.framework */,
 				CEB817441652FF3F00DBAB71 /* CoreGraphics.framework */,
@@ -197,7 +177,7 @@
 			children = (
 				CEB8174F1652FF3F00DBAB71 /* AppDelegate.h */,
 				CEB817501652FF3F00DBAB71 /* AppDelegate.m */,
-				CEB817521652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard */,
+				29FDA297166FF498007FD502 /* MainStoryboard_iPhone.storyboard */,
 				CEBECE621656FAB5009877FB /* MainViewController.h */,
 				CEBECE631656FAB5009877FB /* MainViewController.m */,
 				CEBECE6D16570152009877FB /* SettingsViewController.h */,
@@ -351,7 +331,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB8174B1652FF3F00DBAB71 /* InfoPlist.strings in Resources */,
-				CEB817541652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard in Resources */,
 				CEB81797165307B700DBAB71 /* us_only.sq3 in Resources */,
 				CEBECE601656F94B009877FB /* Moon-Phase-Full-icon.png in Resources */,
 				CEBECE611656F94B009877FB /* Sunrise-icon.png in Resources */,
@@ -364,6 +343,7 @@
 				CEA8AE33166851AE002253F7 /* balance_30.png in Resources */,
 				CEA8AE34166851AE002253F7 /* checkmark_30.png in Resources */,
 				CEA8AE3616685349002253F7 /* sunset_icon.png in Resources */,
+				29FDA299166FF498007FD502 /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,8 +363,6 @@
 				AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */,
 				AC45A1921664174C005783FD /* Location.m in Sources */,
 				AC45A19916641F12005783FD /* ManualLocatorCITYViewController.m in Sources */,
-				295A2418166D5924008BE356 /* CLLocation (Strings).m in Sources */,
-				295A241C166D5A59008BE356 /* MyLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,20 +378,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		29FDA297166FF498007FD502 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29FDA298166FF498007FD502 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
 		CEB817491652FF3F00DBAB71 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CEB8174A1652FF3F00DBAB71 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CEB817521652FF3F00DBAB71 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEB817531652FF3F00DBAB71 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

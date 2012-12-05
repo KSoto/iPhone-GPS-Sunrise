@@ -21,16 +21,20 @@
 //
 
 #import "GPSLocatorViewController.h"
-#import "MyLocationManager.h"
 
 @interface GPSLocatorViewController ()
 
 @end
 
 @implementation GPSLocatorViewController
+{
+    CLLocationManager *locationManager;
+}
 
-@synthesize coordLabel = _coordLabel;
+@synthesize latLabel = _latLabel;
+@synthesize longLabel = _longLabel;
 @synthesize standardUserDefaults = standardUserDefaults;
+@synthesize successLabel = _successLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,23 +45,22 @@
     return self;
 }
 
+//http://www.appcoda.com/how-to-get-current-location-iphone-user/
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-//***********FROM http://gamble.ecs.fullerton.edu/teaching/fall12/cs491t/sample-code/corelocation.m/view **************//
-     if ([CLLocationManager locationServicesEnabled] == NO)
-        {
-         NSLog(@"Location services are not enabled. Exiting.");
-        }
-     MyLocationManager* mlm = [[MyLocationManager alloc] init];
-     [mlm startUpdatingLocation:@"Starting"];
+    self.longLabel.hidden = TRUE;
+    self.latLabel.hidden = TRUE;
+    self.successLabel.hidden = TRUE;
     
-    //get saved coordinates from MyLocationManager.m
-    self.standardUserDefaults = [NSUserDefaults standardUserDefaults];
-    NSString *coords = [self.standardUserDefaults stringForKey:@"localizedCoordinateString"];
-    self.coordLabel.text = coords;
+    locationManager = [[CLLocationManager alloc] init];
+    
+    //GET CURRENT LOCATION:
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [locationManager startUpdatingLocation];
      
 }
 
@@ -70,6 +73,49 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+//GET CURRENT LOCATION EVENTS:
+//http://www.appcoda.com/how-to-get-current-location-iphone-user/
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    self.longLabel.hidden = TRUE;
+    self.latLabel.hidden = TRUE;
+    self.successLabel.hidden = FALSE;
+    
+    NSLog(@"didFailWithError: %@", error);
+    UIAlertView *errorAlert = [[UIAlertView alloc]
+                               initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [errorAlert show];
+    self.successLabel.text = @"Failure!";
+}
+
+//http://www.appcoda.com/how-to-get-current-location-iphone-user/
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    self.longLabel.hidden = FALSE;
+    self.latLabel.hidden = FALSE;
+    self.successLabel.hidden = FALSE;
+    
+    NSLog(@"didUpdateToLocation: %@", newLocation);
+    CLLocation *currentLocation = newLocation;
+    
+    if (currentLocation != nil) {
+        self.longLabel.text = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.longitude];
+        self.latLabel.text = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude];
+        self.successLabel.text = @"Success!";
+        
+        //save coordinates
+        [self.standardUserDefaults setObject:@"GPS Retrieved" forKey:@"cityName"];
+        [self.standardUserDefaults setDouble:currentLocation.coordinate.latitude forKey:@"cityLat"];
+        [self.standardUserDefaults setDouble:currentLocation.coordinate.longitude forKey:@"cityLon"];
+        
+        // synchronize the settings
+        [self.standardUserDefaults synchronize];
+    }
+    
+    // Stop Location Manager, we have a coordinate; just run once
+    [locationManager stopUpdatingLocation];
 }
 
 @end
