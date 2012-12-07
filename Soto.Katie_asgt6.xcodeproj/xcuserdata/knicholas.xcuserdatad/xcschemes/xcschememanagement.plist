@@ -4,20 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MacSunrise.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>Nova.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Novw.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Soto.Katie_asgt6.xcscheme</key>
 		<dict>
@@ -27,12 +22,7 @@
 		<key>Sunrise.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>SunriseLibrary.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -53,16 +43,6 @@
 			<true/>
 		</dict>
 		<key>CEB8173B1652FF3E00DBAB71</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CEB81771165302E800DBAB71</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CEB817811653064200DBAB71</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -84,6 +84,13 @@
 		29FDA34F16701462007FD502 /* venus.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA30616701462007FD502 /* venus.h */; };
 		29FDA35016701462007FD502 /* vsop87.c in Sources */ = {isa = PBXBuildFile; fileRef = 29FDA30716701462007FD502 /* vsop87.c */; };
 		29FDA35116701462007FD502 /* vsop87.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FDA30816701462007FD502 /* vsop87.h */; };
+		36EA0778167027DA00F328DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
+		36EA0786167027DA00F328DA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36EA0785167027DA00F328DA /* SenTestingKit.framework */; };
+		36EA0787167027DA00F328DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817401652FF3F00DBAB71 /* UIKit.framework */; };
+		36EA0788167027DA00F328DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
+		36EA078B167027DA00F328DA /* libNovw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36EA0777167027DA00F328DA /* libNovw.a */; };
+		36EA0791167027DA00F328DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36EA078F167027DA00F328DA /* InfoPlist.strings */; };
+		36EA0794167027DA00F328DA /* NovwTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EA0793167027DA00F328DA /* NovwTests.m */; };
 		AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A18D1664148F005783FD /* USLocationsDatabase.m */; };
 		AC45A1921664174C005783FD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A1911664174C005783FD /* Location.m */; };
 		AC45A19416641A62005783FD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45A19316641A62005783FD /* libsqlite3.dylib */; };
@@ -117,6 +124,16 @@
 		CEBECE7516570338009877FB /* ManualLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBECE7416570338009877FB /* ManualLocatorViewController.m */; };
 		CEBECE7B16570429009877FB /* HouseBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBECE7916570429009877FB /* HouseBlack.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36EA0789167027DA00F328DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB817331652FF3E00DBAB71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36EA0776167027DA00F328DA;
+			remoteInfo = Novw;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CEB8179B165308D000DBAB71 /* CopyFiles */ = {
@@ -210,6 +227,13 @@
 		29FDA30616701462007FD502 /* venus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = venus.h; sourceTree = "<group>"; };
 		29FDA30716701462007FD502 /* vsop87.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vsop87.c; sourceTree = "<group>"; };
 		29FDA30816701462007FD502 /* vsop87.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vsop87.h; sourceTree = "<group>"; };
+		36EA0777167027DA00F328DA /* libNovw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNovw.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		36EA0784167027DA00F328DA /* NovwTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovwTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36EA0785167027DA00F328DA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		36EA078E167027DA00F328DA /* NovwTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NovwTests-Info.plist"; sourceTree = "<group>"; };
+		36EA0790167027DA00F328DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36EA0792167027DA00F328DA /* NovwTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NovwTests.h; sourceTree = "<group>"; };
+		36EA0793167027DA00F328DA /* NovwTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NovwTests.m; sourceTree = "<group>"; };
 		AC45A18C1664148F005783FD /* USLocationsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USLocationsDatabase.h; path = Soto.Katie_asgt6/USLocationsDatabase.h; sourceTree = "<group>"; };
 		AC45A18D1664148F005783FD /* USLocationsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USLocationsDatabase.m; path = Soto.Katie_asgt6/USLocationsDatabase.m; sourceTree = "<group>"; };
 		AC45A1901664174C005783FD /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Soto.Katie_asgt6/Location.h; sourceTree = "<group>"; };
@@ -262,6 +286,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				29FDA2AA16700132007FD502 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36EA0774167027DA00F328DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EA0778167027DA00F328DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36EA0780167027DA00F328DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EA0786167027DA00F328DA /* SenTestingKit.framework in Frameworks */,
+				36EA0787167027DA00F328DA /* UIKit.framework in Frameworks */,
+				36EA0788167027DA00F328DA /* Foundation.framework in Frameworks */,
+				36EA078B167027DA00F328DA /* libNovw.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +436,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		36EA078C167027DA00F328DA /* NovwTests */ = {
+			isa = PBXGroup;
+			children = (
+				36EA0792167027DA00F328DA /* NovwTests.h */,
+				36EA0793167027DA00F328DA /* NovwTests.m */,
+				36EA078D167027DA00F328DA /* Supporting Files */,
+			);
+			path = NovwTests;
+			sourceTree = "<group>";
+		};
+		36EA078D167027DA00F328DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36EA078E167027DA00F328DA /* NovwTests-Info.plist */,
+				36EA078F167027DA00F328DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CEB817311652FF3E00DBAB71 = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +462,7 @@
 				295A241E166D5C9C008BE356 /* Database Helpers */,
 				CEB817601653002F00DBAB71 /* Libraries */,
 				CEB817611653005C00DBAB71 /* Resources */,
+				36EA078C167027DA00F328DA /* NovwTests */,
 				CEB8173F1652FF3F00DBAB71 /* Frameworks */,
 				CEB8173D1652FF3F00DBAB71 /* Products */,
 			);
@@ -411,6 +474,8 @@
 				CEB8173C1652FF3F00DBAB71 /* Soto.Katie_asgt6.app */,
 				CEB8179D165308D000DBAB71 /* libSunrise.a */,
 				29FDA2A916700132007FD502 /* libNova.a */,
+				36EA0777167027DA00F328DA /* libNovw.a */,
+				36EA0784167027DA00F328DA /* NovwTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -423,6 +488,7 @@
 				AC45A19516641A6C005783FD /* CoreLocation.framework */,
 				CEB817441652FF3F00DBAB71 /* CoreGraphics.framework */,
 				AC45A19316641A62005783FD /* libsqlite3.dylib */,
+				36EA0785167027DA00F328DA /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -565,6 +631,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36EA0775167027DA00F328DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -584,6 +657,42 @@
 			productName = Nova;
 			productReference = 29FDA2A916700132007FD502 /* libNova.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		36EA0776167027DA00F328DA /* Novw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36EA0799167027DA00F328DA /* Build configuration list for PBXNativeTarget "Novw" */;
+			buildPhases = (
+				36EA0773167027DA00F328DA /* Sources */,
+				36EA0774167027DA00F328DA /* Frameworks */,
+				36EA0775167027DA00F328DA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Novw;
+			productName = Novw;
+			productReference = 36EA0777167027DA00F328DA /* libNovw.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		36EA0783167027DA00F328DA /* NovwTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36EA079A167027DA00F328DA /* Build configuration list for PBXNativeTarget "NovwTests" */;
+			buildPhases = (
+				36EA077F167027DA00F328DA /* Sources */,
+				36EA0780167027DA00F328DA /* Frameworks */,
+				36EA0781167027DA00F328DA /* Resources */,
+				36EA0782167027DA00F328DA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36EA078A167027DA00F328DA /* PBXTargetDependency */,
+			);
+			name = NovwTests;
+			productName = NovwTests;
+			productReference = 36EA0784167027DA00F328DA /* NovwTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 		CEB8173B1652FF3E00DBAB71 /* Soto.Katie_asgt6 */ = {
 			isa = PBXNativeTarget;
@@ -643,11 +752,21 @@
 				CEB8173B1652FF3E00DBAB71 /* Soto.Katie_asgt6 */,
 				CEB8179C165308D000DBAB71 /* Sunrise */,
 				29FDA2A816700132007FD502 /* Nova */,
+				36EA0776167027DA00F328DA /* Novw */,
+				36EA0783167027DA00F328DA /* NovwTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		36EA0781167027DA00F328DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EA0791167027DA00F328DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB8173A1652FF3E00DBAB71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -670,6 +789,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36EA0782167027DA00F328DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29FDA2A516700132007FD502 /* Sources */ = {
@@ -715,6 +850,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36EA0773167027DA00F328DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36EA077F167027DA00F328DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EA0794167027DA00F328DA /* NovwTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEB817381652FF3E00DBAB71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -742,6 +892,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		36EA078A167027DA00F328DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36EA0776167027DA00F328DA /* Novw */;
+			targetProxy = 36EA0789167027DA00F328DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		29FDA297166FF498007FD502 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -749,6 +907,14 @@
 				29FDA298166FF498007FD502 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		36EA078F167027DA00F328DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36EA0790167027DA00F328DA /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		CEB817491652FF3F00DBAB71 /* InfoPlist.strings */ = {
@@ -783,6 +949,60 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		36EA0795167027DA00F328DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Novw.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Novw/Novw-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		36EA0796167027DA00F328DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Novw.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Novw/Novw-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		36EA0797167027DA00F328DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Novw/Novw-Prefix.pch";
+				INFOPLIST_FILE = "NovwTests/NovwTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		36EA0798167027DA00F328DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Novw/Novw-Prefix.pch";
+				INFOPLIST_FILE = "NovwTests/NovwTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -895,6 +1115,25 @@
 				29FDA2B316700132007FD502 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36EA0799167027DA00F328DA /* Build configuration list for PBXNativeTarget "Novw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36EA0795167027DA00F328DA /* Debug */,
+				36EA0796167027DA00F328DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36EA079A167027DA00F328DA /* Build configuration list for PBXNativeTarget "NovwTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36EA0797167027DA00F328DA /* Debug */,
+				36EA0798167027DA00F328DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEB817361652FF3E00DBAB71 /* Build configuration list for PBXProject "Soto.Katie_asgt6" */ = {
 			isa = XCConfigurationList;

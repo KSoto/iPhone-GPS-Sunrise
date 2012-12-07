@@ -34,6 +34,8 @@
 //
 
 #import "MainViewController.h"
+#import "lunar.h"
+#import "julian_day.h"
 
 @implementation MainViewController
 
@@ -53,6 +55,8 @@
 @synthesize officialIcon = _officialIcon;
 @synthesize nauticalIcon = _nauticalIcon;
 @synthesize astroIcon = _astroIcon;
+
+@synthesize moonPhaseLabel = _moonPhaseLabel;
 
 @synthesize civil;
 @synthesize official;
@@ -214,6 +218,24 @@
         self.astroSunsetLabel.hidden = TRUE;
     }
      
+//*****GET LUNAR PHASE**********
+    /*! \fn double ln_get_lunar_phase (double JD);
+     * \param JD Julian Day
+     * \return Phase angle. (Value between 0 and 180)
+     * \ingroup lunar
+     *
+     * Calculates the angle Sun - Moon - Earth.
+     */
+    
+//** WRONG, SHOWING 82 degrees when it should be 56% **
+    double current_julian_day = ln_get_julian_from_timet (&now);
+    NSLog(@"\nCurrent Julian Day: %@", [NSString stringWithFormat:@"%.2f",current_julian_day]);
+    
+    double lunar_phase = ln_get_lunar_phase(current_julian_day);
+    NSLog(@"\nLunar Phase: %@", [NSString stringWithFormat:@"%.2f",lunar_phase]);
+    
+    self.moonPhaseLabel.hidden = FALSE;
+    self.moonPhaseLabel.text = [NSString stringWithFormat:@"%.2f",lunar_phase];
     
 }
 

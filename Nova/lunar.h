@@ -19,7 +19,7 @@
 #ifndef _LN_LUNAR_H
 #define _LN_LUNAR_H
 
-#include <ln_types.h>
+#include "ln_types.h"
 
 #define LN_LUNAR_STANDART_HORIZON		0.125
 

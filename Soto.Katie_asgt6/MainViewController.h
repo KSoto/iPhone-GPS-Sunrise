@@ -59,6 +59,8 @@
     IBOutlet UIImageView* _nauticalIcon;
     IBOutlet UIImageView* _astroIcon;
     
+    IBOutlet UILabel* _moonPhaseLabel;
+    
     BOOL civil;
     BOOL official;
     BOOL nautical;
@@ -85,6 +87,8 @@
 @property (retain, nonatomic) IBOutlet UIImageView* officialIcon;
 @property (retain, nonatomic) IBOutlet UIImageView* nauticalIcon;
 @property (retain, nonatomic) IBOutlet UIImageView* astroIcon;
+
+@property (retain, nonatomic) IBOutlet UILabel* moonPhaseLabel;
 
 @property (assign) BOOL civil;
 @property (assign) BOOL official;

@@ -20,7 +20,7 @@
 #define _LN_JULIAN_DAY_H
 
 #include <time.h>
-#include <ln_types.h>
+#include "ln_types.h"
 
 #ifdef __cplusplus
 extern "C" {
