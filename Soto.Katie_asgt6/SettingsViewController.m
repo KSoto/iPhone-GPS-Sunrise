@@ -3,10 +3,10 @@
 //  Soto.Katie_asgt6
 //
 //  Author: Katie Soto
-//  Project: iPhone Sunrise / Sunset Application
+//  Project: iPhone GPS Sunrise / Sunset Application
 //  Author's Email: KReneSoto@gmail.com
 //  Author's Phone: (714) 213-2228
-//  Date Created: 11/2012
+//  Date Created: 12/2012
 //  Class: CSUF CPSC 491T - iPhone Mobile App Development
 //  Professor: Michael Shafae
 //  Copyright (c) 2012 Katie Soto. All rights reserved.

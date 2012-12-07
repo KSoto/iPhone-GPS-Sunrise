@@ -3,10 +3,10 @@
 //  Soto.Katie_asgt6
 //
 //  Author: Katie Soto
-//  Project: iPhone Sunrise / Sunset Application
+//  Project: iPhone GPS Sunrise / Sunset Application
 //  Author's Email: KReneSoto@gmail.com
 //  Author's Phone: (714) 213-2228
-//  Date Created: 11/2012
+//  Date Created: 12/2012
 //  Class: CSUF CPSC 491T - iPhone Mobile App Development
 //  Professor: Michael Shafae
 //  Copyright (c) 2012 Katie Soto. All rights reserved.
@@ -19,6 +19,7 @@
 //  File Description: This is the CITY TABLE VIEW where the user selects which city
 //      they would like to know the sunrise and sunset of. Once selected, the city gets
 //      stored in the NSUserDefaults dictionary which gets called in MainViewController.
+//      As of the new release, the cities are not INDEXED alphabeticly.
 //
 //  Copyright note: The behavior of NSUserDefaults *standardUserDefaults has been
 //          modeled after:
@@ -60,6 +61,6 @@
 @property (nonatomic, retain) NSMutableArray *sectionsArray;
 @property (nonatomic, retain) UILocalizedIndexedCollation *collation;
 - (void)configureSections;
-- (void)setTimeZonesArray:(NSMutableArray *)newDataArray;
+- (void)setCities:(NSMutableArray *)newDataArray;
 
 @end

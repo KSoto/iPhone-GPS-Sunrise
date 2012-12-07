@@ -3,10 +3,10 @@
 //  Soto.Katie_asgt6
 //
 //  Author: Katie Soto
-//  Project: iPhone Sunrise / Sunset Application
+//  Project: iPhone GPS Sunrise / Sunset Application
 //  Author's Email: KReneSoto@gmail.com
 //  Author's Phone: (714) 213-2228
-//  Date Created: 11/2012
+//  Date Created: 12/2012
 //  Class: CSUF CPSC 491T - iPhone Mobile App Development
 //  Professor: Michael Shafae
 //  Copyright (c) 2012 Katie Soto. All rights reserved.
@@ -16,8 +16,14 @@
 //      in united states. Use a table view to display all states / cities for the user
 //      to choose their location. Allow the location (and settings) to be saved upon
 //      exiting the application.
-//  File Description: This controller WILL control the GPS detection routine, but
-//      has not yet been implemented.
+//  File Description: This controller controls the GPS detection routine.
+//
+//  Copyright note: The behavior of my GPS routine has been modeled by:
+//      Source: App Coda
+//      Address: http://www.appcoda.com/how-to-get-current-location-iphone-user/
+//      Author: Simon Ng
+//      Date Written: 9/2012
+//      Copyright: © Copyright 2012 AppCoda · All Rights Reserved
 //
 
 #import "GPSLocatorViewController.h"

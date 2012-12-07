@@ -3,10 +3,10 @@
 //  Soto.Katie_asgt6
 //
 //  Author: Katie Soto
-//  Project: iPhone Sunrise / Sunset Application
+//  Project: iPhone GPS Sunrise / Sunset Application
 //  Author's Email: KReneSoto@gmail.com
 //  Author's Phone: (714) 213-2228
-//  Date Created: 11/2012
+//  Date Created: 12/2012
 //  Class: CSUF CPSC 491T - iPhone Mobile App Development
 //  Professor: Michael Shafae
 //  Copyright (c) 2012 Katie Soto. All rights reserved.
@@ -117,9 +117,9 @@
         //location has been previously set by the user
         //"lat" and "long" are switched, sorry for the confusion
         lat = [self.standardUserDefaults doubleForKey:@"cityLon"];
-        NSLog(@"\nLat is: %f", lat);
+        //NSLog(@"\nLat is: %f", lat);
         lon = [self.standardUserDefaults doubleForKey:@"cityLat"];
-        NSLog(@"\nLong is: %f", lon);
+        //NSLog(@"\nLong is: %f", lon);
     }
 
     time( &now );
@@ -227,12 +227,11 @@
      * Calculates the angle Sun - Moon - Earth.
      */
     
-//** WRONG, SHOWING 82 degrees when it should be 56% **
     double current_julian_day = ln_get_julian_from_timet (&now);
-    NSLog(@"\nCurrent Julian Day: %@", [NSString stringWithFormat:@"%.2f",current_julian_day]);
+    //NSLog(@"\nCurrent Julian Day: %@", [NSString stringWithFormat:@"%.2f",current_julian_day]);
     
     double lunar_phase = ln_get_lunar_phase(current_julian_day);
-    NSLog(@"\nLunar Phase: %@", [NSString stringWithFormat:@"%.2f",lunar_phase]);
+    //NSLog(@"\nLunar Phase: %@", [NSString stringWithFormat:@"%.2f",lunar_phase]);
     
     self.moonPhaseLabel.hidden = FALSE;
     self.moonPhaseLabel.text = [NSString stringWithFormat:@"%.2f",lunar_phase];
