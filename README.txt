@@ -33,14 +33,15 @@ You can optionally choose different sunrise and sunset types to be shown. To do 
 2) Use the switches to mark which sunrise/sunset types you'd like to be enabled, or disabled. Click the little "i" for more information about each type.
 
 //Features Completed:
-++ALL U.S. cities and states are includes.
+++ALL U.S. cities and states are included for manual locations.
 ++ALL Sunrise/Sunset types included.
-++GPS location detection
-++Indexed city table view
+++GPS location detection.
+++Indexed city table view.
+++Lunar phase calculations.
 
 //Bugs:
 --Currently the indexed city table view isn't working: selecting a letter (let's say, "F"), then choosing a city (let's say the third one down: "Fair Oaks") will result in the selection of the city that is the same # down, but starting with A (for example, choosing "Fair Oaks" will result in choosing "Abilene", which is the third down).
---The calculated lunar phase degrees is wrong.
+--The calculated lunar phase degrees is incorrect.
 
 //Features Not Completed:
 --Labels were used instead of drawing a clock.

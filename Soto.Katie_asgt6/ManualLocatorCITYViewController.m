@@ -29,6 +29,12 @@
 //      Date Retrieved: 2/2011
 //      Copyright: unknown, assuming All Rights Reserved
 //
+//  Copyright note: Indexing the table view alphabetically has been taken from:
+//      Source: Apple Developer - SimpleIndexedTableView
+//      Address: http://developer.apple.com/library/ios/#samplecode/TableViewSuite/Introduction/Intro.html
+//      Author: Unknown
+//      Date Updated: 6/2012
+//      Copyright: © 2010 Apple Inc. All Rights Reserved.
 
 #import "ManualLocatorCITYViewController.h"
 #import "Location.h"
@@ -41,7 +47,6 @@
 @synthesize regionString = _regionString;
 @synthesize standardUserDefaults;
 
-//http://developer.apple.com/library/ios/#samplecode/TableViewSuite/Introduction/Intro.html
 //*****using "Location" instead of "TimeZoneWrapper"
 //timeZonesArray -> cities
 //timeZonesInSection -> citiesInSection
