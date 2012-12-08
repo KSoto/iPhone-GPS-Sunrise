@@ -120,6 +120,7 @@
     // Get the city from the array associated with the section index in the sections arra
     self.citiesInSection = [sectionsArray objectAtIndex:indexPath.section];
     
+    
     // Configure the cell with the city's name.
     Location *cityName = [self.citiesInSection objectAtIndex: indexPath.row];
     
@@ -227,9 +228,15 @@
     if ([segue.identifier isEqualToString:@"setCity"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        //get the sections information again
+        self.citiesInSection = [sectionsArray objectAtIndex:indexPath.section];
+        
+        //give the information to MainViewController
         MainViewController *destViewController = segue.destinationViewController;
         destViewController.cityObject = [self.citiesInSection objectAtIndex: indexPath.row];
         
+        //save the information to NSUserDefaults
         [self.standardUserDefaults setObject:destViewController.cityObject.name forKey:@"cityName"];
         [self.standardUserDefaults setDouble:destViewController.cityObject.coord->latitude forKey:@"cityLat"];
         [self.standardUserDefaults setDouble:destViewController.cityObject.coord->longitude forKey:@"cityLon"];
