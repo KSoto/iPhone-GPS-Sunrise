@@ -40,7 +40,6 @@ You can optionally choose different sunrise and sunset types to be shown. To do 
 ++Lunar phase calculations.
 
 //Bugs:
---Currently the indexed city table view isn't working: selecting a letter (let's say, "F"), then choosing a city (let's say the third one down: "Fair Oaks") will result in the selection of the city that is the same # down, but starting with A (for example, choosing "Fair Oaks" will result in choosing "Abilene", which is the third down).
 --The calculated lunar phase degrees is incorrect.
 
 //Features Not Completed:
