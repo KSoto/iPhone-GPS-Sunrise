@@ -58,6 +58,8 @@
 @synthesize sectionsArray;
 @synthesize collation;
 
+@synthesize citiesInSection;
+
 //***********************************************
 //if a null pointer, we need to initalize it
 -(Location*) selectedRegion;
@@ -99,8 +101,8 @@
 {
     // The number of cities in the section is the count of the array
     //associated with the section in the sections array.
-	NSArray *citiesInSection = [sectionsArray objectAtIndex:section];
-    return [citiesInSection count];
+	self.citiesInSection = [sectionsArray objectAtIndex:section];
+    return [self.citiesInSection count];
 }
 
 //***********************************************
@@ -116,10 +118,10 @@
     }
     
     // Get the city from the array associated with the section index in the sections arra
-    NSArray *citiesInSection = [sectionsArray objectAtIndex:indexPath.section];
+    self.citiesInSection = [sectionsArray objectAtIndex:indexPath.section];
     
     // Configure the cell with the city's name.
-    Location *cityName = [citiesInSection objectAtIndex: indexPath.row];
+    Location *cityName = [self.citiesInSection objectAtIndex: indexPath.row];
     
     cell.textLabel.text = cityName.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%g, %g)", cityName.region, cityName.coord->longitude, cityName.coord->latitude];
@@ -226,7 +228,7 @@
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         MainViewController *destViewController = segue.destinationViewController;
-        destViewController.cityObject = [self.cities objectAtIndex: indexPath.row];
+        destViewController.cityObject = [self.citiesInSection objectAtIndex: indexPath.row];
         
         [self.standardUserDefaults setObject:destViewController.cityObject.name forKey:@"cityName"];
         [self.standardUserDefaults setDouble:destViewController.cityObject.coord->latitude forKey:@"cityLat"];

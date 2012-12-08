@@ -57,6 +57,8 @@
     NSMutableArray* _cities;
     NSMutableArray *sectionsArray; //this will create an array with A-Z for the sections
     UILocalizedIndexedCollation *collation;
+    
+    NSArray *citiesInSection;
 }
 
 @property (nonatomic, retain) NSMutableArray* cities;
@@ -67,6 +69,9 @@
 
 @property (nonatomic, retain) NSMutableArray *sectionsArray;
 @property (nonatomic, retain) UILocalizedIndexedCollation *collation;
+
+@property (nonatomic, retain) NSArray *citiesInSection;
+
 - (void)configureSections;
 - (void)setCities:(NSMutableArray *)newDataArray;
 
