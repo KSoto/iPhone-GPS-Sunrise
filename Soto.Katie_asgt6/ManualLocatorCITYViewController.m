@@ -89,17 +89,15 @@
 }
 
 //***********************************************
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-    self.cities = nil;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	// The number of sections is the same as the number of titles in the collation.
+    return [[collation sectionTitles] count];
 }
 
 //***********************************************
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // The number of cities in the section is the count of the array 
+    // The number of cities in the section is the count of the array
     //associated with the section in the sections array.
 	NSArray *citiesInSection = [sectionsArray objectAtIndex:section];
     return [citiesInSection count];
@@ -108,7 +106,7 @@
 //***********************************************
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     static NSString *MyIdentifier = @"MyIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     
@@ -130,29 +128,6 @@
 }
 
 //***********************************************
-/* RETRIEVED FROM APPCODA.COM */
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"setCity"])
-    {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        MainViewController *destViewController = segue.destinationViewController;
-        destViewController.cityObject = [self.cities objectAtIndex: indexPath.row];
-        
-        [self.standardUserDefaults setObject:destViewController.cityObject.name forKey:@"cityName"];
-        [self.standardUserDefaults setDouble:destViewController.cityObject.coord->latitude forKey:@"cityLat"];
-        [self.standardUserDefaults setDouble:destViewController.cityObject.coord->longitude forKey:@"cityLon"];
-        [self.standardUserDefaults synchronize];
-    }
-}
-//***********************************************
-/* RETRIEVED FROM http://developer.apple.com/library/ios/#samplecode/TableViewSuite/Introduction/Intro.html */
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	// The number of sections is the same as the number of titles in the collation.
-    return [[collation sectionTitles] count];
-}
-
 /*
  Section-related methods: Retrieve the section titles and section index titles from the collation.
  */
@@ -176,6 +151,21 @@
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+//***********************************************
+- (void)setCities:(NSMutableArray *)newDataArray {
+	if (newDataArray != _cities) {
+		//[_cities release];
+		_cities = newDataArray;
+	}
+	if (_cities == nil) {
+		self.sectionsArray = nil;
+	}
+	else {
+		[self configureSections];
+	}
+}
+
+//***********************************************
 - (void)configureSections {
 	
 	// Get the current collation and keep a reference to it.
@@ -219,19 +209,30 @@
 	self.sectionsArray = newSectionsArray;
 }
 
-//**This method IS NEEDED, you just don't need to retain / release because of ARC**
-- (void)setCities:(NSMutableArray *)newDataArray {
-	if (newDataArray != _cities) {
-		//[_cities release];
-		_cities = newDataArray;
-	}
-	if (_cities == nil) {
-		self.sectionsArray = nil;
-	}
-	else {
-		[self configureSections];
-	}
+//***********************************************
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+    self.cities = nil;
 }
 
+
+//***********************************************
+/* RETRIEVED FROM APPCODA.COM */
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"setCity"])
+    {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        MainViewController *destViewController = segue.destinationViewController;
+        destViewController.cityObject = [self.cities objectAtIndex: indexPath.row];
+        
+        [self.standardUserDefaults setObject:destViewController.cityObject.name forKey:@"cityName"];
+        [self.standardUserDefaults setDouble:destViewController.cityObject.coord->latitude forKey:@"cityLat"];
+        [self.standardUserDefaults setDouble:destViewController.cityObject.coord->longitude forKey:@"cityLon"];
+        [self.standardUserDefaults synchronize];
+    }
+}
 
 @end

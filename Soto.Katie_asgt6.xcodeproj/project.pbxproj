@@ -89,8 +89,6 @@
 		36EA0787167027DA00F328DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817401652FF3F00DBAB71 /* UIKit.framework */; };
 		36EA0788167027DA00F328DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB817421652FF3F00DBAB71 /* Foundation.framework */; };
 		36EA078B167027DA00F328DA /* libNovw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36EA0777167027DA00F328DA /* libNovw.a */; };
-		36EA0791167027DA00F328DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36EA078F167027DA00F328DA /* InfoPlist.strings */; };
-		36EA0794167027DA00F328DA /* NovwTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EA0793167027DA00F328DA /* NovwTests.m */; };
 		AC45A18E1664148F005783FD /* USLocationsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A18D1664148F005783FD /* USLocationsDatabase.m */; };
 		AC45A1921664174C005783FD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = AC45A1911664174C005783FD /* Location.m */; };
 		AC45A19416641A62005783FD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC45A19316641A62005783FD /* libsqlite3.dylib */; };
@@ -230,10 +228,6 @@
 		36EA0777167027DA00F328DA /* libNovw.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNovw.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EA0784167027DA00F328DA /* NovwTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovwTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36EA0785167027DA00F328DA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		36EA078E167027DA00F328DA /* NovwTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NovwTests-Info.plist"; sourceTree = "<group>"; };
-		36EA0790167027DA00F328DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		36EA0792167027DA00F328DA /* NovwTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NovwTests.h; sourceTree = "<group>"; };
-		36EA0793167027DA00F328DA /* NovwTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NovwTests.m; sourceTree = "<group>"; };
 		AC45A18C1664148F005783FD /* USLocationsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USLocationsDatabase.h; path = Soto.Katie_asgt6/USLocationsDatabase.h; sourceTree = "<group>"; };
 		AC45A18D1664148F005783FD /* USLocationsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USLocationsDatabase.m; path = Soto.Katie_asgt6/USLocationsDatabase.m; sourceTree = "<group>"; };
 		AC45A1901664174C005783FD /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = Soto.Katie_asgt6/Location.h; sourceTree = "<group>"; };
@@ -436,25 +430,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		36EA078C167027DA00F328DA /* NovwTests */ = {
-			isa = PBXGroup;
-			children = (
-				36EA0792167027DA00F328DA /* NovwTests.h */,
-				36EA0793167027DA00F328DA /* NovwTests.m */,
-				36EA078D167027DA00F328DA /* Supporting Files */,
-			);
-			path = NovwTests;
-			sourceTree = "<group>";
-		};
-		36EA078D167027DA00F328DA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				36EA078E167027DA00F328DA /* NovwTests-Info.plist */,
-				36EA078F167027DA00F328DA /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		CEB817311652FF3E00DBAB71 = {
 			isa = PBXGroup;
 			children = (
@@ -462,7 +437,6 @@
 				295A241E166D5C9C008BE356 /* Database Helpers */,
 				CEB817601653002F00DBAB71 /* Libraries */,
 				CEB817611653005C00DBAB71 /* Resources */,
-				36EA078C167027DA00F328DA /* NovwTests */,
 				CEB8173F1652FF3F00DBAB71 /* Frameworks */,
 				CEB8173D1652FF3F00DBAB71 /* Products */,
 			);
@@ -763,7 +737,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36EA0791167027DA00F328DA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,7 +834,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36EA0794167027DA00F328DA /* NovwTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,14 +879,6 @@
 				29FDA298166FF498007FD502 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		36EA078F167027DA00F328DA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36EA0790167027DA00F328DA /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		CEB817491652FF3F00DBAB71 /* InfoPlist.strings */ = {

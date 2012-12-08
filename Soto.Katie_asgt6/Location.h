@@ -53,6 +53,8 @@
 
 - (id) initWithName: (NSString*) aName andUCName: (NSString*) aUCName andUCAltName: (NSString*) aUCAltName andRegion: (NSString*) aRegion andCoordinate: (CLLocationCoordinate2D*) aCoordinate andTimezone: (NSString*) aTimezone;
 
+- (id) initWithName: (NSString*) aName;
+
 - (NSString*) description;
 
 - (CLLocationCoordinate2D*) coord;

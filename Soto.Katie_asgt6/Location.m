@@ -55,6 +55,15 @@
     return self;
 }
 
+- (id) initWithName: (NSString*) aName;
+{
+    self = [super init];
+    if( self ){
+        self.name = aName;
+    }
+    return self;
+}
+
 - (NSString*) description
 {
     return [NSString stringWithFormat:@"%@ %@ %@ %@ %g %g %@", _name, _uc_name, _uc_alt_name, _region, coord.latitude, coord.longitude, _timezone];
