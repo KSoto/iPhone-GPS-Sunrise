@@ -44,6 +44,7 @@ You can optionally choose different sunrise and sunset types to be shown. To do 
 
 //Features Not Completed:
 --Labels were used instead of drawing a clock.
+--**This program assumes the sunrise will always be in the AM and sunset will always be in the PM**
 
 //External Dependancies:
 --NO External Dependancies. Database is included.

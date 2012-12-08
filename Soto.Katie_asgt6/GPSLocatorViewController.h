@@ -35,6 +35,7 @@
     IBOutlet UILabel* _latLabel;
     IBOutlet UILabel* _longLabel;
     IBOutlet UILabel* _successLabel;
+    IBOutlet UILabel* _addressLabel;
     
     //http://codeexamples.wordpress.com/2011/02/12/nsuserdefaults-example/
     NSUserDefaults * standardUserDefaults;
@@ -43,6 +44,7 @@
 @property (retain, nonatomic) IBOutlet UILabel *latLabel;
 @property (retain, nonatomic) IBOutlet UILabel *longLabel;
 @property (retain, nonatomic) IBOutlet UILabel *successLabel;
+@property (retain, nonatomic) IBOutlet UILabel *addressLabel;
 @property (nonatomic, retain) NSUserDefaults * standardUserDefaults;
 
 @end

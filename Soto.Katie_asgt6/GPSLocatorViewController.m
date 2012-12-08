@@ -32,15 +32,19 @@
 
 @end
 
+//http://www.appcoda.com/how-to-get-current-location-iphone-user/
 @implementation GPSLocatorViewController
 {
     CLLocationManager *locationManager;
+    CLGeocoder *geocoder;
+    CLPlacemark *placemark;
 }
 
 @synthesize latLabel = _latLabel;
 @synthesize longLabel = _longLabel;
 @synthesize standardUserDefaults = standardUserDefaults;
 @synthesize successLabel = _successLabel;
+@synthesize addressLabel = _addressLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -63,13 +67,14 @@
     self.latLabel.hidden = TRUE;
     self.successLabel.hidden = TRUE;
     
+    //initialize
     locationManager = [[CLLocationManager alloc] init];
+    geocoder = [[CLGeocoder alloc] init];
     
     //GET CURRENT LOCATION:
     locationManager.delegate = self;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     [locationManager startUpdatingLocation];
-     
 }
 
 - (void)viewDidUnload
@@ -105,7 +110,7 @@
     self.latLabel.hidden = FALSE;
     self.successLabel.hidden = FALSE;
     
-    NSLog(@"didUpdateToLocation: %@", newLocation);
+    //NSLog(@"didUpdateToLocation: %@", newLocation);
     CLLocation *currentLocation = newLocation;
     
     if (currentLocation != nil) {
@@ -121,6 +126,21 @@
         // synchronize the settings
         [self.standardUserDefaults synchronize];
     }
+    
+    // TRY TO find the address based on lat & long
+    //NSLog(@"Resolving the Address");
+    [geocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
+        //NSLog(@"Found placemarks: %@, error: %@", placemarks, error);
+        if (error == nil && [placemarks count] > 0) {
+            placemark = [placemarks lastObject];
+            self.addressLabel.text = [NSString stringWithFormat:@"%@ %@\n%@ %@\n%@\n%@",
+                                 placemark.subThoroughfare, placemark.thoroughfare,
+                                 placemark.postalCode, placemark.locality,
+                                 placemark.administrativeArea,
+                                 placemark.country];
+        }
+    } ];
+    
     
     // Stop Location Manager, we have a coordinate; just run once
     [locationManager stopUpdatingLocation];
